@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Family Meals">
+<meta name="theme-color" content="#0f2318">
+<link rel="apple-touch-icon" href="data:image/jpeg;base64,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">
+<title>Family Meal Planner</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f1a13;--forest:#1a3a2a;--forest-mid:#2d5a40;--forest-light:#3d7a55;
+  --sage:#7aab8a;--mint:#c2dbc9;--foam:#eaf4ed;--cream:#f8f4ee;
+  --amber:#e8a020;--amber-pale:#fdf3dc;--tomato:#c94040;
+  --lavender:#7c6faa;--lav-pale:#f0eef8;
+  --text:#1a1a1a;--text-mid:#4a4a4a;--text-soft:#8a8a8a;--card:#fff;
+  --radius:20px;--radius-sm:12px;
+  --shadow:0 2px 16px rgba(15,26,19,.08);
+  --safe-top:env(safe-area-inset-top,0px);--safe-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{height:-webkit-fill-available}
+body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--text);min-height:100vh;min-height:-webkit-fill-available;overflow:hidden}
+#app{display:flex;flex-direction:column;height:100vh;height:-webkit-fill-available}
+.topbar{background:var(--forest);padding:calc(var(--safe-top) + 12px) 16px 12px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;z-index:50}
+.topbar-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#f8f4ee;letter-spacing:-.2px}
+.topbar-right{display:flex;align-items:center;gap:8px}
+.week-chip{background:rgba(255,255,255,.12);color:#c2dbc9;font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px}
+.plan-btn{background:var(--amber);color:var(--ink);border:none;border-radius:20px;font-family:'Outfit',sans-serif;font-size:12px;font-weight:700;padding:6px 12px;cursor:pointer}
+.scroll{flex:1;overflow-y:auto;padding:14px 14px calc(76px + var(--safe-bottom));-webkit-overflow-scrolling:touch}
+.nav{position:fixed;bottom:0;left:0;right:0;background:var(--forest);display:flex;padding:6px 0 calc(6px + var(--safe-bottom));z-index:50;border-top:1px solid rgba(255,255,255,.07)}
+.nb{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:none;cursor:pointer;padding:5px 2px;color:var(--sage);opacity:.5;font-family:'Outfit',sans-serif;transition:opacity .2s,color .2s}
+.nb.on{opacity:1;color:var(--amber)}
+.nb svg{width:20px;height:20px}
+.nb span{font-size:9px;font-weight:600;letter-spacing:.3px}
+.view{display:none;animation:fadeUp .22s ease}
+.view.on{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:12px;overflow:hidden}
+.card-hdr{padding:12px 14px 9px;border-bottom:1px solid rgba(0,0,0,.05);display:flex;align-items:center;gap:10px}
+.card-hdr h2{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--forest)}
+.card-body{padding:12px 14px}
+.ico{width:31px;height:31px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.slabel{font-size:10px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;color:var(--text-soft);margin:16px 0 7px 3px}
+.mrow{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid rgba(0,0,0,.05)}
+.mrow:last-child{border-bottom:none;padding-bottom:0}
+.daypill{min-width:36px;padding:3px 0;border-radius:7px;text-align:center;font-size:9px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;flex-shrink:0;margin-top:2px}
+.daypill.work{background:#fff3cd;color:#7a4a00}
+.daypill.off{background:var(--foam);color:var(--forest)}
+.daypill.pizza{background:#ffe0e0;color:var(--tomato)}
+.mname{font-weight:600;font-size:14px;margin-bottom:2px}
+.mmeta{font-size:11px;color:var(--text-soft)}
+.swapbtn{background:none;border:1.5px solid var(--mint);color:var(--forest-mid);font-size:10px;font-weight:700;padding:4px 9px;border-radius:16px;cursor:pointer;font-family:'Outfit',sans-serif;flex-shrink:0;margin-top:2px}
+.chk{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid rgba(0,0,0,.05);cursor:pointer}
+.chk:last-child{border-bottom:none}
+.chk.done{opacity:.4}
+.chk.done .chk-lbl{text-decoration:line-through}
+.chkbox{width:22px;height:22px;border-radius:7px;border:2px solid var(--mint);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .18s;margin-top:1px}
+.chkbox.checked{background:var(--forest-light);border-color:var(--forest-light)}
+.chk-lbl{font-size:13px;font-weight:500}
+.chk-sub{font-size:11px;color:var(--text-soft);margin-top:1px}
+.gsec-hdr{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--forest-light);padding:7px 0 3px}
+.gitem{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid rgba(0,0,0,.05);cursor:pointer}
+.gitem:last-child{border-bottom:none}
+.gitem.checked .glabel{text-decoration:line-through;color:var(--text-soft)}
+.glabel{flex:1;font-size:13px;font-weight:500}
+.gqty{font-size:11px;color:var(--text-soft)}
+.mpills{display:flex;gap:8px;margin-bottom:12px}
+.mpill{flex:1;border-radius:13px;padding:10px 7px;text-align:center}
+.mpill .mv{font-family:'Playfair Display',serif;font-size:19px;font-weight:700}
+.mpill .ml{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text-soft)}
+.pbar-out{background:#e5e5e5;border-radius:6px;height:7px;margin:5px 0 2px;overflow:hidden}
+.pbar-in{height:100%;border-radius:6px;transition:width .5s}
+.plbl{display:flex;justify-content:space-between;font-size:10px;color:var(--text-soft)}
+.prep-prog{background:white;border-radius:16px;padding:12px 14px;margin-bottom:12px;box-shadow:var(--shadow);display:flex;align-items:center;gap:13px}
+.prep-ring{position:relative;width:52px;height:52px;flex-shrink:0}
+.prep-ring svg{transform:rotate(-90deg)}
+.ring-pct{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--forest)}
+.lday{background:white;border-radius:18px;overflow:hidden;margin-bottom:12px;box-shadow:var(--shadow)}
+.lday-hdr{padding:11px 14px}
+.lday-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:white}
+.lday-sub{font-size:10px;color:rgba(255,255,255,.8)}
+.lmrow{padding:8px 14px;border-top:1px solid rgba(0,0,0,.06);display:flex;gap:10px;align-items:flex-start}
+.lmtime{font-size:9px;font-weight:800;color:var(--text-soft);text-transform:uppercase;letter-spacing:.5px;min-width:48px;margin-top:2px}
+.lmname{font-size:13px;font-weight:700}
+.lmnote{font-size:10.5px;color:var(--text-soft);margin-top:1px}
+.rheat{display:inline-block;font-size:9.5px;font-weight:700;padding:2px 7px;border-radius:9px;background:#fff4e0;color:#b86800;margin-top:3px}
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.52);z-index:200;align-items:flex-end}
+.overlay.open{display:flex}
+.sheet{background:var(--cream);width:100%;border-radius:24px 24px 0 0;padding:17px 17px calc(17px + var(--safe-bottom));animation:slideUp .28s cubic-bezier(.32,.72,0,1);max-height:90vh;overflow-y:auto}
+@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.sheet-handle{width:36px;height:4px;background:#ccc;border-radius:4px;margin:0 auto 15px}
+.sheet-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:13px;color:var(--ink)}
+.sopt{display:flex;align-items:center;gap:12px;padding:11px 13px;background:white;border-radius:13px;margin-bottom:8px;cursor:pointer;border:2px solid transparent;transition:border-color .15s}
+.sopt.sel{border-color:var(--forest-light);box-shadow:0 0 0 3px rgba(61,122,85,.1)}
+.btn-p{width:100%;padding:13px;background:var(--forest);color:white;border:none;border-radius:13px;font-family:'Outfit',sans-serif;font-size:14.5px;font-weight:700;cursor:pointer}
+.btn-a{width:100%;padding:13px;background:var(--amber);color:var(--ink);border:none;border-radius:13px;font-family:'Outfit',sans-serif;font-size:14.5px;font-weight:700;cursor:pointer;margin-top:8px}
+.btn-g{width:100%;padding:10px;background:none;color:var(--text-soft);border:none;font-family:'Outfit',sans-serif;font-size:13px;cursor:pointer;margin-top:3px}
+.whobar{display:flex;gap:7px;margin-bottom:13px}
+.whobtn{flex:1;padding:8px 4px;border-radius:11px;border:2px solid var(--mint);background:white;font-family:'Outfit',sans-serif;font-size:11.5px;font-weight:700;cursor:pointer;color:var(--forest-mid);transition:all .15s;text-align:center}
+.whobtn.on{background:var(--forest);border-color:var(--forest);color:white}
+.statrow{display:flex;gap:9px;margin-bottom:12px}
+.statbox{flex:1;background:white;border-radius:13px;padding:11px 9px;text-align:center;box-shadow:var(--shadow)}
+.statbox .sv{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--forest)}
+.statbox .sl{font-size:9.5px;color:var(--text-soft);font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-top:1px}
+.lib-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:12px}
+.lcard{background:white;border-radius:15px;padding:12px;box-shadow:var(--shadow);cursor:pointer;position:relative;transition:transform .15s}
+.lcard:active{transform:scale(.97)}
+.lce{font-size:28px;margin-bottom:5px}
+.lcn{font-weight:700;font-size:12.5px;line-height:1.3;margin-bottom:2px}
+.lcm{font-size:10px;color:var(--text-soft)}
+.lct{margin-top:5px;display:flex;flex-wrap:wrap;gap:3px}
+.in-rot{position:absolute;top:9px;right:9px;width:17px;height:17px;background:var(--forest-light);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.lib-search{width:100%;padding:10px 13px;background:white;border:1.5px solid var(--mint);border-radius:11px;font-family:'Outfit',sans-serif;font-size:13.5px;color:var(--text);margin-bottom:11px;outline:none}
+.wiz-step{display:none}
+.wiz-step.on{display:block;animation:fadeUp .22s ease}
+.wiz-prog{display:flex;gap:5px;margin-bottom:16px}
+.wiz-dot{flex:1;height:4px;border-radius:4px;background:var(--mint);transition:background .3s}
+.wiz-dot.done{background:var(--forest-light)}
+.wiz-dot.active{background:var(--amber)}
+.wiz-title{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:var(--ink);margin-bottom:3px}
+.wiz-sub{font-size:12.5px;color:var(--text-soft);margin-bottom:16px}
+.day-toggle{background:white;border-radius:13px;padding:12px 14px;display:flex;align-items:center;gap:12px;cursor:pointer;border:2px solid transparent;box-shadow:var(--shadow);transition:border-color .15s;margin-bottom:8px}
+.day-toggle.sel{border-color:var(--forest-light)}
+.dt-check{width:21px;height:21px;border-radius:6px;border:2px solid var(--mint);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .18s}
+.day-toggle.sel .dt-check{background:var(--forest-light);border-color:var(--forest-light)}
+.meal-slot{background:white;border-radius:13px;padding:12px 14px;margin-bottom:8px;box-shadow:var(--shadow);display:flex;align-items:center;gap:11px;cursor:pointer;border:2px solid transparent}
+.ms-day{font-weight:800;font-size:12px;min-width:28px;color:var(--text-soft)}
+.ms-info{flex:1}
+.ms-name{font-weight:700;font-size:13.5px}
+.ms-meta{font-size:11px;color:var(--text-soft)}
+.ms-swap{font-size:10.5px;font-weight:700;color:var(--forest-light);padding:3px 9px;border:1.5px solid var(--mint);border-radius:14px}
+.pantry-q{background:white;border-radius:13px;padding:14px;margin-bottom:9px;box-shadow:var(--shadow)}
+.pq-text{font-weight:700;font-size:14.5px;margin-bottom:11px}
+.pq-btns{display:flex;gap:8px}
+.pq-yes,.pq-no{flex:1;padding:9px;border-radius:9px;border:2px solid transparent;font-family:'Outfit',sans-serif;font-size:13px;font-weight:700;cursor:pointer}
+.pq-yes{background:#e8f5e9;color:#2e7d32}
+.pq-yes.sel{background:var(--forest-light);color:white}
+.pq-no{background:#fde8e8;color:var(--tomato)}
+.pq-no.sel{background:var(--tomato);color:white}
+.scan-spinner{width:52px;height:52px;border:4px solid var(--mint);border-top-color:var(--forest);border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 14px}
+@keyframes spin{to{transform:rotate(360deg)}}
+#bvw{position:relative;width:100%;border-radius:16px;overflow:hidden;background:#000;aspect-ratio:4/3;margin-bottom:12px}
+#bvideo{width:100%;height:100%;object-fit:cover;display:block}
+.scan-ol{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.scan-frame{width:72%;aspect-ratio:3/1;border:3px solid var(--amber);border-radius:10px;box-shadow:0 0 0 9999px rgba(0,0,0,.45)}
+.scan-line{position:absolute;width:66%;height:2px;background:var(--amber);box-shadow:0 0 8px var(--amber);animation:scanA 2s ease-in-out infinite}
+@keyframes scanA{0%,100%{top:30%}50%{top:68%}}
+.ing-chip{display:inline-flex;align-items:center;gap:5px;background:white;border:1.5px solid var(--mint);border-radius:18px;padding:4px 10px;margin:3px;font-size:12px;font-weight:600;cursor:pointer}
+.ing-chip.removed{opacity:.32;text-decoration:line-through}
+.snack-row{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid rgba(0,0,0,.05)}
+.snack-row:last-child{border-bottom:none}
+.snack-name{flex:1;border:none;background:transparent;font-family:'Outfit',sans-serif;font-size:13px;font-weight:600;color:var(--text);outline:none;min-width:0}
+.snack-num{width:52px;border:1.5px solid var(--mint);border-radius:8px;padding:4px 6px;font-family:'Outfit',sans-serif;font-size:12px;text-align:center;outline:none;color:var(--text)}
+.snack-del{background:none;border:none;color:var(--tomato);font-size:16px;cursor:pointer;padding:0 2px;flex-shrink:0}
+.add-row{display:flex;gap:7px;margin-top:10px}
+.add-input{flex:1;padding:8px 10px;border:1.5px solid var(--mint);border-radius:10px;font-family:'Outfit',sans-serif;font-size:13px;outline:none;background:white}
+.add-btn{padding:8px 13px;background:var(--forest);color:white;border:none;border-radius:10px;font-family:'Outfit',sans-serif;font-size:13px;font-weight:700;cursor:pointer}
+.rd-hdr{background:var(--forest);border-radius:16px;padding:16px;margin-bottom:13px;color:white}
+.rd-name{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;margin-bottom:4px}
+.rd-meta{font-size:12px;color:var(--mint)}
+.istep{display:flex;gap:11px;margin-bottom:11px}
+.step-num{width:26px;height:26px;border-radius:50%;background:var(--forest);color:white;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex-shrink:0;margin-top:1px}
+.step-text{font-size:13.5px;line-height:1.5;color:var(--text-mid)}
+.receipt-card{background:white;border-radius:14px;padding:13px;box-shadow:var(--shadow);margin-bottom:10px;display:flex;gap:12px;align-items:center}
+.receipt-thumb{width:52px;height:52px;border-radius:9px;object-fit:cover;flex-shrink:0}
+.receipt-info{flex:1;min-width:0}
+.receipt-store{font-weight:700;font-size:13.5px}
+.receipt-date{font-size:11px;color:var(--text-soft);margin-top:1px}
+.receipt-total{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--forest)}
+.receipt-del{background:none;border:none;color:var(--text-soft);font-size:18px;cursor:pointer;flex-shrink:0}
+.upload-zone{border:2.5px dashed var(--mint);border-radius:16px;padding:24px 18px;text-align:center;cursor:pointer;background:var(--foam);margin-bottom:12px}
+.product-card{background:white;border-radius:15px;padding:14px;box-shadow:var(--shadow);margin-bottom:11px}
+.pm-row{display:flex;gap:7px;margin-bottom:11px}
+.pm{flex:1;background:var(--foam);border-radius:9px;padding:7px;text-align:center}
+.pm .pmv{font-weight:800;font-size:14px;color:var(--forest)}
+.pm .pml{font-size:9px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-soft);font-weight:700}
+.ic-banner{background:linear-gradient(135deg,var(--forest),var(--forest-mid));border-radius:15px;padding:13px;display:flex;align-items:center;gap:12px;margin-bottom:12px;cursor:pointer}
+.tchips{display:flex;gap:6px;overflow-x:auto;padding-bottom:3px;margin-bottom:10px;scrollbar-width:none}
+.tchips::-webkit-scrollbar{display:none}
+.tchip{flex-shrink:0;padding:5px 12px;border-radius:17px;font-size:11px;font-weight:700;cursor:pointer;background:white;border:2px solid var(--mint);color:var(--forest-mid)}
+.tchip.on{background:var(--forest);border-color:var(--forest);color:white}
+.gp-mc{background:white;border-radius:13px;padding:13px 14px;margin-bottom:9px;box-shadow:var(--shadow)}
+.nb-badge{font-size:9px;font-weight:800;padding:1px 5px;border-radius:7px;margin-left:5px}
+.nb-a{background:#1a7d1a;color:#fff}.nb-b{background:#7db41a;color:#fff}
+.nb-c{background:#f5c400;color:#333}.nb-d{background:#e0750a;color:#fff}.nb-e{background:#c0392b;color:#fff}
+.sum-row{display:flex;justify-content:space-between;align-items:flex-start;padding:8px 0;border-bottom:1px solid rgba(0,0,0,.06)}
+.sum-row:last-child{border-bottom:none}
+
+.pf{font-family:"Playfair Display",serif;}
+
+/* drag & drop */
+.mrow{cursor:default}
+.mrow.dragging{opacity:.35}
+.mrow.drag-over{outline:2.5px solid var(--amber);border-radius:10px}
+.drag-handle{font-size:16px;color:var(--text-soft);padding:0 6px 0 0;cursor:grab;flex-shrink:0;touch-action:none;user-select:none;line-height:1}
+/* lily editable */
+.lily-meal-row{display:flex;align-items:flex-start;gap:9px;padding:9px 14px;border-top:1px solid rgba(0,0,0,.06)}
+.lily-del-btn{background:none;border:none;color:var(--tomato);font-size:17px;cursor:pointer;padding:0 0 0 4px;flex-shrink:0;line-height:1}
+.lily-edit-btn{background:none;border:none;color:var(--text-soft);font-size:13px;cursor:pointer;padding:0 2px;flex-shrink:0}
+.lily-add-row{display:flex;gap:7px;padding:9px 14px;border-top:1px solid rgba(0,0,0,.06);align-items:center}
+.lily-time-sel{border:1.5px solid var(--mint);border-radius:9px;padding:7px 6px;font-family:Outfit,sans-serif;font-size:11.5px;outline:none;background:white;color:var(--text);flex-shrink:0}
+.lily-add-input{flex:1;border:1.5px solid var(--mint);border-radius:9px;padding:7px 10px;font-family:Outfit,sans-serif;font-size:12.5px;outline:none;background:white;min-width:0}
+.lily-add-btn{background:var(--forest);color:white;border:none;border-radius:9px;padding:7px 13px;font-family:Outfit,sans-serif;font-size:14px;font-weight:700;cursor:pointer;flex-shrink:0}
+.inline-edit{border:none;border-bottom:2px solid var(--amber);background:transparent;font-family:Outfit,sans-serif;font-size:13px;font-weight:700;color:var(--text);outline:none;width:100%;padding:1px 0}
+/* quick add */
+.qa-day-btn,.qa-time-btn{flex:1;padding:7px 3px;border-radius:9px;border:2px solid var(--mint);background:white;font-family:Outfit,sans-serif;font-size:11px;font-weight:700;cursor:pointer;color:var(--forest-mid);text-align:center;transition:all .15s}
+.qa-day-btn.sel{background:var(--forest);border-color:var(--forest);color:white}
+.qa-time-btn.sel{background:var(--lavender);border-color:var(--lavender);color:white}
+</style>
+</head>
+<body>
+<div id="app">
+<div class="topbar">
+  <div class="topbar-title">🌿 Family Meals</div>
+  <div class="topbar-right">
+    <span class="week-chip" id="week-chip">Mar 9–13</span>
+    <button class="plan-btn" onclick="openPlanner()">Plan Week →</button>
+  </div>
+</div>
+<div class="scroll" id="scroll-area">
+
+  <div class="view on" id="view-home">
+    <div class="whobar">
+      <button class="whobtn on" id="who-you" onclick="setUser('you')">👋 You</button>
+      <button class="whobtn" id="who-abbey" onclick="setUser('abbey')">💚 Abbey</button>
+      <button class="whobtn" id="who-gp" onclick="setUser('gp')">👴 Grands</button>
+    </div>
+    <div id="gp-view" style="display:none">
+      <div class="card" style="background:linear-gradient(135deg,#4a1070,#7c4daa);border:none">
+        <div class="card-body" style="text-align:center;padding:20px 14px">
+          <div style="font-size:42px;margin-bottom:7px">🧒</div>
+          <div style="font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:white;margin-bottom:2px">Lily's meals today</div>
+          <div style="font-size:12.5px;color:rgba(255,255,255,.8)" id="gp-date"></div>
+        </div>
+      </div>
+      <div id="gp-meals"></div>
+    </div>
+    <div id="main-view">
+      <div class="slabel">Today's Dinner</div>
+      <div class="card">
+        <div class="card-hdr">
+          <div class="ico" style="background:var(--foam)" id="today-emoji">🍽️</div>
+          <div><h2 id="today-name">—</h2><div style="font-size:11px;color:var(--text-soft)" id="today-meta"></div></div>
+        </div>
+        <div class="card-body" style="padding-top:8px" id="today-body"></div>
+      </div>
+      <div class="statrow">
+        <div class="statbox"><div class="sv" id="st-meals">5</div><div class="sl">Meals</div></div>
+        <div class="statbox"><div class="sv" id="st-grocery">—</div><div class="sl">To Buy</div></div>
+        <div class="statbox"><div class="sv" id="st-prep">0%</div><div class="sl">Prep</div></div>
+      </div>
+      <div class="slabel">This Week</div>
+      <div class="card"><div class="card-body" style="padding:5px 12px" id="week-overview"></div></div>
+      <div class="slabel">Quick Pantry Check</div>
+      <div id="pantry-home"></div>
+      <div id="pantry-done" style="display:none">
+        <div class="card" style="background:var(--forest);border:none">
+          <div class="card-body" style="text-align:center;padding:16px">
+            <div style="font-size:30px">✅</div>
+            <div style="color:white;font-weight:700;margin-top:6px;font-family:'Playfair Display',serif;font-size:16px">Pantry check complete!</div>
+            <div style="color:#c2dbc9;font-size:11.5px;margin-top:2px">Grocery list updated</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="view" id="view-meals">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:7px">
+      <div class="slabel" style="margin:0">Dinner Plan</div>
+      <span style="font-size:10px;color:var(--text-soft)">⠿ drag to swap days</span>
+    </div>
+    <div class="card"><div class="card-body" style="padding:5px 12px" id="meals-list"></div></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-top:4px;margin-bottom:7px">
+      <div class="slabel" style="margin:0">Lily's Meals</div>
+      <button onclick="openLilyQuickAdd()" style="background:var(--forest);color:white;border:none;border-radius:20px;padding:5px 14px;font-size:11px;font-weight:700;font-family:Outfit,sans-serif;cursor:pointer">+ Quick Add</button>
+    </div>
+    <div id="lily-cards"></div>
+  </div>
+
+  <div class="view" id="view-grocery">
+    <div class="ic-banner" onclick="window.open('https://www.instacart.com/store/market-basket/storefront','_blank')">
+      <div style="font-size:28px">🛒</div>
+      <div><div style="font-family:'Playfair Display',serif;color:white;font-size:13.5px;font-weight:700">Open in Instacart</div><div style="color:#c2dbc9;font-size:11px;margin-top:1px">Market Basket, Reading MA</div></div>
+      <div style="color:var(--amber);font-size:20px;margin-left:auto">→</div>
+    </div>
+    <div class="slabel">Grocery List</div>
+    <div id="grocery-container"></div>
+    <button class="btn-g" onclick="clearGrocery()">Clear checked items</button>
+  </div>
+
+  <div class="view" id="view-prep">
+    <div class="prep-prog">
+      <div class="prep-ring">
+        <svg width="52" height="52" viewBox="0 0 52 52">
+          <circle cx="26" cy="26" r="20" fill="none" stroke="#e0e0e0" stroke-width="5"/>
+          <circle cx="26" cy="26" r="20" fill="none" stroke="#3d7a55" stroke-width="5"
+            stroke-dasharray="125.7" stroke-dashoffset="125.7" id="ring-circle" stroke-linecap="round"/>
+        </svg>
+        <div class="ring-pct" id="ring-pct">0%</div>
+      </div>
+      <div>
+        <div style="font-weight:700;font-size:14.5px">Sunday Prep</div>
+        <div style="font-size:11.5px;color:var(--text-soft);margin-top:2px" id="prep-sub">0 of 18 tasks</div>
+      </div>
+    </div>
+    <div class="tchips" id="prep-chips"></div>
+    <div id="prep-list"></div>
+  </div>
+
+  <div class="view" id="view-library">
+    <input class="lib-search" placeholder="🔍  Search meals…" id="lib-search" oninput="filterLib(this.value)">
+    <div style="display:flex;gap:8px;margin-bottom:12px">
+      <div style="flex:1;border:2px dashed var(--mint);border-radius:14px;padding:14px;text-align:center;cursor:pointer;background:var(--foam)" onclick="document.getElementById('recipe-file').click()">
+        <div style="font-size:26px;margin-bottom:4px">📖</div>
+        <div style="font-weight:700;font-size:12.5px;color:var(--forest)">Recipe Photo</div>
+        <div style="font-size:10px;color:var(--text-soft);margin-top:1px">Printed or handwritten</div>
+        <input type="file" id="recipe-file" accept="image/*" capture="environment" style="display:none" onchange="handleRecipePhoto(event)">
+      </div>
+      <div style="flex:1;border:2px dashed var(--mint);border-radius:14px;padding:14px;text-align:center;cursor:pointer;background:var(--foam)" onclick="openBarcodeScanner()">
+        <div style="font-size:26px;margin-bottom:4px">📦</div>
+        <div style="font-weight:700;font-size:12.5px;color:var(--forest)">Scan Barcode</div>
+        <div style="font-size:10px;color:var(--text-soft);margin-top:1px">Live camera auto-detect</div>
+      </div>
+    </div>
+    <div class="slabel">Meal Library</div>
+    <div class="lib-grid" id="lib-grid"></div>
+  </div>
+
+  <div class="view" id="view-nutrition">
+    <div class="slabel">Daily Targets</div>
+    <div class="mpills">
+      <div class="mpill" style="background:#e8f5e9"><div class="mv" style="color:#2e7d32">3,100</div><div class="ml">Cal Goal</div></div>
+      <div class="mpill" style="background:#e3f2fd"><div class="mv" style="color:#1565c0">190g</div><div class="ml">Protein</div></div>
+      <div class="mpill" style="background:#fff8e1"><div class="mv" style="color:#f57f17">320g</div><div class="ml">Carbs</div></div>
+    </div>
+    <div class="slabel">Lunch Box</div>
+    <div class="card">
+      <div class="card-hdr"><div class="ico" style="background:var(--foam)">🥗</div><h2>Your Daily Lunch</h2></div>
+      <div class="card-body" id="lunch-macros"></div>
+    </div>
+    <div class="slabel">Snack Pack <span style="font-size:10px;font-weight:400;color:var(--text-soft);text-transform:none;letter-spacing:0">— tap name or number to edit</span></div>
+    <div class="card">
+      <div class="card-body">
+        <div id="snack-list"></div>
+        <div class="add-row">
+          <input class="add-input" id="new-snack-name" placeholder="Snack name…">
+          <input class="add-input" id="new-snack-cal" placeholder="kcal" style="width:58px;flex:none">
+          <input class="add-input" id="new-snack-prot" placeholder="P(g)" style="width:50px;flex:none">
+          <button class="add-btn" onclick="addSnack()">+</button>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:9px 0 0;font-weight:700;font-size:13px;border-top:1px solid #eee;margin-top:8px">
+          <span>Total</span><span style="color:var(--forest)" id="snack-total">—</span>
+        </div>
+      </div>
+    </div>
+    <div class="slabel">Tonight's Dinner</div>
+    <div class="card"><div class="card-body" id="dinner-nutrition"></div></div>
+  </div>
+
+  <div class="view" id="view-receipts">
+    <div class="slabel">Upload Receipt</div>
+    <div class="upload-zone" onclick="document.getElementById('receipt-file').click()">
+      <div style="font-size:36px;margin-bottom:8px">🧾</div>
+      <div style="font-weight:700;font-size:14px;color:var(--forest)">Take or Upload Receipt Photo</div>
+      <div style="font-size:11.5px;color:var(--text-soft);margin-top:3px">For record keeping &amp; future budget tracking</div>
+      <input type="file" id="receipt-file" accept="image/*" capture="environment" style="display:none" onchange="handleReceiptUpload(event)">
+    </div>
+    <div class="slabel">Receipt History</div>
+    <div id="receipts-list"></div>
+  </div>
+
+</div><!-- /scroll -->
+
+<nav class="nav">
+  <button class="nb on" id="nav-home" onclick="goView('home')">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg><span>Home</span></button>
+  <button class="nb" id="nav-meals" onclick="goView('meals')">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.06 22.99h1.66c.84 0 1.53-.64 1.63-1.46L23 5.05h-5V1h-1.97v4.05h-4.97l.3 2.34c1.71.47 3.31 1.32 4.27 2.26 1.44 1.42 2.43 2.89 2.43 5.29v8.05zM1 21.99V21h15.03v.99c0 .55-.45 1-1.01 1H2.01c-.56 0-1.01-.45-1.01-1zm15.03-7c0-3.5-3.37-6-7.52-6C4.37 8.99 1 11.49 1 14.99v1h15.03v-1z"/></svg><span>Meals</span></button>
+  <button class="nb" id="nav-grocery" onclick="goView('grocery')">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96C5 16.1 6.9 18 9 18h12v-2H9.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H19c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0023.47 5H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg><span>Grocery</span></button>
+  <button class="nb" id="nav-prep" onclick="goView('prep')">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Prep</span></button>
+  <button class="nb" id="nav-library" onclick="goView('library')">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg><span>Library</span></button>
+  <button class="nb" id="nav-receipts" onclick="goView('receipts')">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.5 3.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2 7.5 3.5 6 2 4.5 3.5 3 2v20l1.5-1.5L6 22l1.5-1.5L9 22l1.5-1.5L12 22l1.5-1.5L15 22l1.5-1.5L18 22l1.5-1.5L21 22V2l-1.5 1.5zM19 19.09H5V4.91h14v14.18zM6 15h12v2H6zm0-4h12v2H6zm0-4h12v2H6z"/></svg><span>Receipts</span></button>
+  <button class="nb" id="nav-nutrition" onclick="goView('nutrition')">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg><span>Nutrition</span></button>
+</nav>
+</div>
+
+<!-- MODALS -->
+<!-- lily quick add -->
+<div class="overlay" id="lily-qa-modal" onclick="if(event.target.id==='lily-qa-modal')closeModal('lily-qa-modal')">
+  <div class="sheet"><div class="sheet-handle"></div>
+    <div class="sheet-title">🧒 Add to Lily's Day</div>
+    <div id="lily-qa-body"></div>
+  </div>
+</div>
+<!-- lily edit -->
+<div class="overlay" id="lily-edit-modal" onclick="if(event.target.id==='lily-edit-modal')closeModal('lily-edit-modal')">
+  <div class="sheet"><div class="sheet-handle"></div>
+    <div class="sheet-title">Edit Meal</div>
+    <div id="lily-edit-body"></div>
+  </div>
+</div>
+<div class="overlay" id="swap-modal" onclick="if(event.target.id==='swap-modal')closeModal('swap-modal')">
+  <div class="sheet"><div class="sheet-handle"></div>
+    <div class="sheet-title" id="swap-title">Swap Meal</div>
+    <div id="swap-opts"></div>
+    <button class="btn-p" onclick="confirmSwap()">Confirm Swap</button>
+    <button class="btn-g" onclick="closeModal('swap-modal')">Cancel</button>
+  </div>
+</div>
+<div class="overlay" id="recipe-modal" onclick="if(event.target.id==='recipe-modal')closeModal('recipe-modal')">
+  <div class="sheet"><div class="sheet-handle"></div><div id="recipe-modal-body"></div></div>
+</div>
+<div class="overlay" id="detail-modal" onclick="if(event.target.id==='detail-modal')closeModal('detail-modal')">
+  <div class="sheet"><div class="sheet-handle"></div><div id="detail-body"></div></div>
+</div>
+<div class="overlay" id="barcode-modal" onclick="if(event.target.id==='barcode-modal'){stopBarcode();closeModal('barcode-modal')}">
+  <div class="sheet"><div class="sheet-handle"></div><div id="barcode-body"></div></div>
+</div>
+<div class="overlay" id="plan-modal" onclick="if(event.target.id==='plan-modal')closeModal('plan-modal')">
+  <div class="sheet" style="max-height:92vh">
+    <div class="sheet-handle"></div>
+    <div class="wiz-prog" id="wiz-prog"></div>
+    <div class="wiz-step on" id="wiz-1">
+      <div class="wiz-title">👋 Who's working?</div>
+      <div class="wiz-sub">Confirm Abbey's schedule for next week</div>
+      <div id="abbey-days"></div>
+      <button class="btn-p" onclick="wizNext(2)">Next →</button>
+    </div>
+    <div class="wiz-step" id="wiz-2">
+      <div class="wiz-title">🧒 Who watches Lily?</div>
+      <div class="wiz-sub">On days Abbey works</div>
+      <div id="lily-watcher-days"></div>
+      <button class="btn-p" onclick="wizNext(3)">Next →</button>
+      <button class="btn-g" onclick="wizNext(1)">← Back</button>
+    </div>
+    <div class="wiz-step" id="wiz-3">
+      <div class="wiz-title">🍽️ This week's meals</div>
+      <div class="wiz-sub">Tap any meal to swap it out</div>
+      <div id="wiz-meal-slots"></div>
+      <button class="btn-p" onclick="wizNext(4)">Next →</button>
+      <button class="btn-g" onclick="wizNext(2)">← Back</button>
+    </div>
+    <div class="wiz-step" id="wiz-4">
+      <div class="wiz-title">🫙 Pantry check</div>
+      <div class="wiz-sub">Only items you need this week</div>
+      <div id="wiz-pantry"></div>
+      <button class="btn-p" onclick="wizNext(5)">Next →</button>
+      <button class="btn-g" onclick="wizNext(3)">← Back</button>
+    </div>
+    <div class="wiz-step" id="wiz-5">
+      <div class="wiz-title">✅ All set!</div>
+      <div class="wiz-sub">Here's your week</div>
+      <div class="card"><div class="card-body" id="wiz-summary"></div></div>
+      <div style="background:var(--amber-pale);border-radius:13px;padding:12px 14px;margin-bottom:11px">
+        <div style="font-weight:700;font-size:13.5px;color:#7a4a00">🛒 Grocery list ready</div>
+        <div style="font-size:11.5px;color:#9a6a20;margin-top:1px" id="wiz-grocery-count"></div>
+      </div>
+      <button class="btn-p" onclick="finalizePlan()">Confirm &amp; Build Grocery List</button>
+      <button class="btn-g" onclick="wizNext(4)">← Back</button>
+    </div>
+  </div>
+</div>
+<div class="overlay" id="lib-swap-modal" onclick="if(event.target.id==='lib-swap-modal')closeModal('lib-swap-modal')">
+  <div class="sheet"><div class="sheet-handle"></div>
+    <div class="sheet-title" id="lib-swap-title">Add to Week</div>
+    <div id="lib-swap-body"></div>
+  </div>
+</div>
+
+<script>
+// ══ DATA ══════════════════════════════════════════════════════
+const MEALS = {
+  ravioli:     {id:'ravioli',     name:'Ravioli + Chicken Sausage', emoji:'🍝', time:'25 min', cal:520,  protein:28, carbs:55, fat:18, tags:['quick','lily-friendly'], lily:'Plain buttered ravioli + broccoli',            instructions:['Boil salted water and cook ravioli per package directions.','Slice chicken sausage and sauté in olive oil with minced garlic 5–7 min until browned.','Add baby spinach to pan and toss until wilted, about 2 min.','Combine with drained ravioli and serve immediately.','For Lily: plain ravioli with butter, broccoli on the side.']},
+  korean_beef: {id:'korean_beef', name:'Korean Beef over Rice',      emoji:'🥩', time:'30 min', cal:452,  protein:50, carbs:12, fat:22, tags:['quick','high-protein'],  lily:'Mild portion, no red pepper + sweet potato',  instructions:['Whisk together soy sauce, brown sugar, sesame oil, ginger, and garlic for the sauce.','Brown ground beef in a large skillet over medium-high, breaking it up as you go.','Add diced onion and cook 2 more minutes. Pour sauce over beef, simmer 10 min.','Whisk cornstarch into a little water, stir into beef to thicken, 2–3 min.','Serve over rice. For Lily: scoop her portion before adding gochugaru.']},
+  shrimp:      {id:'shrimp',      name:'Sheet Pan Shrimp & Veggies', emoji:'🦐', time:'35 min', cal:320,  protein:38, carbs:12, fat:12, tags:['healthy'],              lily:'Panko chicken tenders + steamed broccoli',    instructions:['Preheat oven to 425°F. Line a sheet pan with foil and spray with nonstick.','Toss broccoli and cherry tomatoes with 1 tbsp olive oil and Old Bay seasoning.','Roast vegetables 20–23 min until broccoli tips start to crisp.','Toss shrimp with hot sauce, garlic, olive oil, and Old Bay.','Add shrimp to pan and roast 6–8 min more. Finish with lemon and green onion.']},
+  tacos:       {id:'tacos',       name:'Ground Turkey Tacos',         emoji:'🌮', time:'25 min', cal:380,  protein:30, carbs:28, fat:14, tags:['quick'],              lily:'Mini taco or turkey meat over rice',           instructions:['Brown ground turkey in a skillet over medium heat, 8–10 min, breaking it up.','Drain excess fat. Add taco seasoning packet and 1/4 cup water, stir to coat.','Simmer 3–4 min until liquid is absorbed and meat is well coated.','Warm tortillas over a gas flame or dry skillet 30 sec per side.','Set out salsa, avocado, shredded cheese, and lime. Build your own!']},
+  pizza:       {id:'pizza',       name:'Pizza Night!',                emoji:'🍕', time:'45 min', cal:560,  protein:38, carbs:58, fat:18, tags:['lily-fave'],         lily:'Plain cheese pizza ⭐',                       instructions:["Pull dough from fridge 30 min before baking. Preheat oven to 500°F with a pizza stone or inverted baking sheet.",'Stretch dough by hand — do not use a rolling pin. Gently pull from the edges.','BBQ Chicken: spread BBQ sauce, add pre-shredded chicken, caramelized onion, mozzarella.','Onion & Pineapple: marinara, caramelized onion, pineapple chunks, mozzarella.','Lily plain cheese: marinara + mozzarella only. Bake 8–10 min until crust is blistered.']},
+  steak:       {id:'steak',       name:'Steak + Stir Fry',            emoji:'🥩', time:'35 min', cal:520,  protein:48, carbs:18, fat:28, tags:['high-protein'],      lily:'Pasta or sweet potato',                       instructions:['Bring steaks to room temperature, season generously with salt and pepper.','Heat cast iron skillet until smoking hot. Sear steaks 3–4 min per side for medium-rare.','Rest steaks 5 min tented with foil before slicing.','Stir-fry peppers and onions in sesame oil over high heat 4–5 min.','Add soy sauce and ginger to stir fry, toss to coat. Slice steak against the grain to serve.']},
+  salmon:      {id:'salmon',      name:'Baked Salmon & Veg',          emoji:'🐟', time:'30 min', cal:410,  protein:45, carbs:14, fat:18, tags:['healthy','high-protein'], lily:'Plain baked chicken + veg',                instructions:['Preheat oven to 400°F. Pat salmon dry, season with salt, pepper, and garlic powder.','Mix lemon juice, olive oil, and fresh or dried dill. Brush generously over salmon.','Place salmon skin-side down on a lined sheet pan. Add vegetables around it.','Bake 12–15 min until salmon flakes easily with a fork and is just opaque in center.','Serve immediately with lemon wedges.']},
+  chicken_sf:  {id:'chicken_sf',  name:'Chicken Stir Fry',            emoji:'🥦', time:'30 min', cal:360,  protein:42, carbs:22, fat:10, tags:['quick','healthy'],   lily:'Plain chicken + rice',                        instructions:['Slice chicken breasts thin. Marinate 10 min in soy sauce and sesame oil.','Heat wok or large skillet until very hot. Add chicken in a single layer — do not crowd.','Cook chicken 3–4 min without stirring for a good sear, then stir and finish.','Add broccoli, peppers, and onions. Stir-fry 4–5 min until crisp-tender.','Mix cornstarch with remaining soy sauce and ginger, pour in to thicken. Serve over rice.']},
+};
+
+const DAYS = [
+  {key:'mon', label:'MON', full:'Monday',    type:'work',  meal:'ravioli'},
+  {key:'tue', label:'TUE', full:'Tuesday',   type:'work',  meal:'korean_beef'},
+  {key:'wed', label:'WED', full:'Wednesday', type:'off',   meal:'shrimp'},
+  {key:'thu', label:'THU', full:'Thursday',  type:'work',  meal:'tacos'},
+  {key:'fri', label:'FRI', full:'Friday',    type:'pizza', meal:'pizza'},
+];
+
+const LILY_DAYS = [
+  {key:'mon', label:'Monday',   color:'#6a1b9a', meals:[
+    {time:'Breakfast', name:'Frozen Pancakes + Blueberries',     note:'2–3 pancakes',                       reheat:'60 sec microwave'},
+    {time:'Snack',     name:'Apple slices + peanut butter',      note:'',                                   reheat:null},
+    {time:'Lunch',     name:'Leftover Ravioli',                   note:'Blue container — MON LUNCH',         reheat:'2 min microwave'},
+    {time:'Snack',     name:'Chicken Tenders',                    note:'Freezer bag',                        reheat:'Air fryer 375°F 8 min'},
+  ]},
+  {key:'tue', label:'Tuesday',  color:'#1565c0', meals:[
+    {time:'Breakfast', name:'Toast + Jelly + Strawberries',       note:'2 slices, butter/jelly',             reheat:null},
+    {time:'Snack',     name:'Blueberries + crackers',             note:'',                                   reheat:null},
+    {time:'Lunch',     name:'Korean Beef + Rice (mild)',          note:'TUE LUNCH container — no red pepper',reheat:'2 min microwave'},
+    {time:'Snack',     name:"Siggi's Yogurt + Strawberries",      note:'',                                   reheat:null},
+  ]},
+  {key:'thu', label:'Thursday', color:'#2e7d32', meals:[
+    {time:'Breakfast', name:'Frozen Pancakes + Pineapple',        note:'2–3 pancakes',                       reheat:'60 sec microwave'},
+    {time:'Snack',     name:'Pineapple chunks + crackers',        note:'',                                   reheat:null},
+    {time:'Lunch',     name:'Sweet Potato Mini Pizza',            note:'THU LUNCH bag in freezer',           reheat:'Oven 400°F 10–12 min'},
+    {time:'Snack',     name:'Chicken Tenders',                    note:'Freezer bag',                        reheat:'Air fryer 375°F 8 min'},
+  ]},
+];
+
+const GROCERY_SECTIONS = [
+  {section:'🥩 Meat & Seafood', items:[
+    {id:'g1', name:'Lean ground beef, 1.5 lbs',     qty:'Korean Beef'},
+    {id:'g2', name:'Lean ground turkey, 1.5 lbs',   qty:'Tacos'},
+    {id:'g3', name:'Chicken sausage links, 1 pkg',  qty:'Ravioli'},
+    {id:'g4', name:'Chicken breasts, 4–5 lbs',      qty:'Lunches + Lily'},
+    {id:'g5', name:'Jumbo shrimp, 1 lb frozen',     qty:'Sheet Pan'},
+  ]},
+  {section:'🥦 Produce', items:[
+    {id:'g6',  name:'Broccoli crowns, 3 large',     qty:'Multiple meals'},
+    {id:'g7',  name:'Sweet potatoes, 6–8 medium',   qty:'Lunches + Lily'},
+    {id:'g8',  name:'Yellow onion, 3 large',        qty:'Stir fry + pizza'},
+    {id:'g9',  name:'Bell peppers, 3',              qty:'Stir fry'},
+    {id:'g10', name:'Cherry tomatoes, 1 pint',      qty:'Sheet Pan'},
+    {id:'g11', name:'Blueberries, 2 pints',         qty:"Lily's meals"},
+    {id:'g12', name:'Strawberries, 1–2 lbs',        qty:"Lily's meals"},
+    {id:'g13', name:'Pineapple chunks',             qty:'Lily + pizza'},
+    {id:'g14', name:'Apples, 7–8',                  qty:'Your snack + Lily'},
+    {id:'g15', name:'Avocados, 3',                  qty:'Tacos'},
+    {id:'g16', name:'Garlic, 1 head',               qty:'Multiple meals'},
+    {id:'g17', name:'Baby spinach, 1 bag',          qty:'Ravioli'},
+    {id:'g18', name:'Fresh cilantro',               qty:'BBQ pizza'},
+  ]},
+  {section:'🍝 Pasta & Grains', items:[
+    {id:'g19',  name:'Pizza dough or bread flour',  qty:'Friday pizza'},
+    {id:'g19b', name:'Cheese ravioli, 2 pkgs',      qty:'Ravioli night'},
+    {id:'g20',  name:'Brown rice, large bag',       qty:'Lunches all week'},
+    {id:'g21',  name:'Flour or corn tortillas',     qty:'Tacos'},
+    {id:'g22',  name:'Panko breadcrumbs',           qty:"Lily's tenders"},
+    {id:'g23',  name:'Bread, 1 loaf',               qty:"Lily's Tue breakfast"},
+  ]},
+  {section:'🧀 Dairy & Eggs', items:[
+    {id:'g24', name:'Mozzarella shredded, 2 bags',  qty:'Pizza + meals'},
+    {id:'g25', name:'Eggs, 2 dozen',                qty:'Tenders + hard boiled'},
+    {id:'g26', name:"Siggi's yogurt, 8–10 cups",    qty:'Yours + Lily'},
+    {id:'g27', name:'Shredded Mexican cheese',      qty:'Tacos'},
+    {id:'g28', name:'Butter',                       qty:"Lily's pasta"},
+  ]},
+  {section:'🫙 Pantry & Sauces', items:[
+    {id:'g29', name:'BBQ sauce',                    qty:'Friday pizza'},
+    {id:'g30', name:'Pizza / marinara sauce',       qty:'Pizza + Lily'},
+    {id:'g31', name:'Low-sodium soy sauce',         qty:'Korean Beef'},
+    {id:'g32', name:'Sesame oil',                   qty:'Multiple'},
+    {id:'g33', name:'Brown sugar',                  qty:'Korean Beef'},
+    {id:'g34', name:'Cornstarch',                   qty:'Korean Beef'},
+    {id:'g35', name:'Taco seasoning',               qty:''},
+    {id:'g36', name:'Salsa',                        qty:'Tacos'},
+    {id:"g37", name:"Frank's RedHot",               qty:'Sheet Pan'},
+    {id:'g38', name:'Old Bay seasoning',            qty:'Sheet Pan'},
+    {id:'g39', name:'Jelly / jam',                  qty:"Lily's toast"},
+    {id:'g40', name:'Peanut butter',                qty:"Lily's snack"},
+  ]},
+  {section:'🍫 Snack Bars', items:[
+    {id:'g41', name:'Builders Protein Bars, 5-pack', qty:'Your daily snack'},
+    {id:'g42', name:'Clif Bars, 5-pack',             qty:'Your daily snack'},
+  ]},
+];
+
+const PREP_TASKS = [
+  {id:'p1',  time:'0:00', group:'lunch',  task:'Preheat oven to 400°F',                            sub:''},
+  {id:'p2',  time:'0:00', group:'lunch',  task:'Sweet potatoes in oven (whole, pricked)',           sub:'45 min hands-off'},
+  {id:'p3',  time:'0:05', group:'lunch',  task:'Start brown rice on stovetop',                     sub:'40 min, set & forget'},
+  {id:'p4',  time:'0:10', group:'lunch',  task:'Grill or bake 4–5 chicken breasts',                sub:'Season: salt, pepper, garlic'},
+  {id:'p5',  time:'0:15', group:'dinner', task:'Make Korean Beef sauce — store in jar',             sub:'Soy, brown sugar, sesame oil, ginger'},
+  {id:'p6',  time:'0:20', group:'lily',   task:"Batch make Lily's panko chicken tenders",          sub:'Bread, bake, cool, freeze on tray'},
+  {id:'p7',  time:'0:30', group:'lily',   task:'Make sweet potato pizza crusts',                   sub:'Freeze individually — label THU LUNCH'},
+  {id:'p8',  time:'0:35', group:'lunch',  task:'Steam broccoli + portion 5 lunch containers',      sub:'Chicken, rice, broccoli, sweet potato'},
+  {id:'p9',  time:'0:45', group:'lily',   task:'Portion Lily MON LUNCH (ravioli)',                  sub:'Blue container, labeled, fridge'},
+  {id:'p10', time:'0:45', group:'lily',   task:'Portion Lily TUE LUNCH (Korean Beef mild)',         sub:'No red pepper! Label & fridge'},
+  {id:'p11', time:'0:50', group:'lily',   task:'Bag THU LUNCH pizza crusts in freezer',            sub:'2 crusts + small bag mozzarella'},
+  {id:'p12', time:'0:55', group:'lily',   task:'Wash & portion fruit snacks for Lily',             sub:'Blueberries, strawberry halves, pineapple'},
+  {id:'p13', time:'0:55', group:'lily',   task:'Make/freeze pancakes if stock low',                sub:'Cool completely before freezing'},
+  {id:'p14', time:'1:00', group:'dinner', task:'Caramelize onions for Friday pizza',               sub:'Low heat 30 min — stir occasionally'},
+  {id:'p15', time:'1:00', group:'dinner', task:'Pre-cook + shred BBQ chicken for pizza',           sub:'Store in fridge, use Friday'},
+  {id:'p16', time:'1:05', group:'dinner', task:'Pre-dice onion and bell peppers',                  sub:'Zip-lock bags in fridge'},
+  {id:'p17', time:'1:10', group:'lily',   task:'Check freezer stocks',                             sub:'Tenders, pancakes, pizza crusts'},
+  {id:'p18', time:'1:20', group:'lily',   task:"Confirm 3+ Siggi's yogurts stocked",               sub:'Mon, Tue, Thu each need one'},
+];
+
+const PANTRY_QS = [
+  {id:'q1', q:'Do you still have soy sauce?',       grocery:'g31'},
+  {id:'q2', q:'Do you have enough brown rice?',      grocery:'g20'},
+  {id:'q3', q:'Is sesame oil stocked?',              grocery:'g32'},
+  {id:'q4', q:"Lily's tenders stocked (10+)?",      grocery:null},
+  {id:'q5', q:'Frozen pancakes stocked (12+)?',     grocery:null},
+  {id:'q6', q:'Olive oil & nonstick spray OK?',     grocery:null},
+];
+
+// ══ STATE ══════════════════════════════════════════════════════
+const S = {
+  user: 'you',
+  weekMeals: {mon:'ravioli', tue:'korean_beef', wed:'shrimp', thu:'tacos', fri:'pizza'},
+  groceryChecked: {},
+  prepDone: {},
+  pantryAnswers: {},
+  swapDay: null,
+  swapSel: null,
+  wizAbbeyDays: {mon:true, tue:true, wed:false, thu:true, fri:false},
+  wizWatcher: {mon:'Grandparents', tue:'Grandparents', thu:'Grandparents'},
+  wizMeals: null,
+  wizPantryAnswers: {},
+  snacks: [
+    {id:'s1', name:'Builders Protein Bar', cal:170, protein:20},
+    {id:'s2', name:'Clif Bar',             cal:250, protein:9},
+    {id:'s3', name:'Apple',                cal:80,  protein:0},
+    {id:'s4', name:'4 Hard Boiled Eggs',   cal:280, protein:24},
+    {id:'s5', name:"Siggi's Yogurt",       cal:100, protein:15},
+  ],
+  mealLibrary: [
+    {id:'ravioli',    name:'Ravioli + Chicken Sausage', emoji:'🍝', time:'25 min', cal:520, protein:28, tags:['quick','lily-friendly'],   inRotation:true},
+    {id:'korean_beef',name:'Korean Beef over Rice',      emoji:'🥩', time:'30 min', cal:452, protein:50, tags:['quick','high-protein'],    inRotation:true},
+    {id:'shrimp',     name:'Sheet Pan Shrimp & Veggies', emoji:'🦐', time:'35 min', cal:320, protein:38, tags:['healthy'],                inRotation:true},
+    {id:'tacos',      name:'Ground Turkey Tacos',         emoji:'🌮', time:'25 min', cal:380, protein:30, tags:['quick'],                  inRotation:true},
+    {id:'pizza',      name:'Homemade Pizza Night',        emoji:'🍕', time:'45 min', cal:560, protein:38, tags:['lily-fave'],              inRotation:true},
+    {id:'steak',      name:'Steak + Stir Fry',            emoji:'🥩', time:'35 min', cal:520, protein:48, tags:['high-protein'],           inRotation:false},
+    {id:'salmon',     name:'Baked Salmon & Veg',          emoji:'🐟', time:'30 min', cal:410, protein:45, tags:['healthy','high-protein'], inRotation:false},
+    {id:'chicken_sf', name:'Chicken Stir Fry',            emoji:'🥦', time:'30 min', cal:360, protein:42, tags:['quick','healthy'],        inRotation:false},
+  ],
+  receipts: [],
+  barcodeStream: null,
+};
+
+// ══ HELPERS ════════════════════════════════════════════════════
+const ck = id => `<svg width="12" height="12" viewBox="0 0 24 24" fill="white"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>`;
+function openModal(id)  { document.getElementById(id).classList.add('open'); }
+function closeModal(id) { if(id==='barcode-modal') stopBarcode(); document.getElementById(id).classList.remove('open'); }
+
+// ══ NAV ════════════════════════════════════════════════════════
+function goView(n) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('on'));
+  document.querySelectorAll('.nb').forEach(b => b.classList.remove('on'));
+  document.getElementById('view-' + n).classList.add('on');
+  document.getElementById('nav-' + n).classList.add('on');
+  document.getElementById('scroll-area').scrollTop = 0;
+  if (n === 'prep')      { updatePrepUI(); renderPrep(); }
+  if (n === 'grocery')   renderGrocery();
+  if (n === 'library')   renderLibrary();
+  if (n === 'nutrition') renderNutrition();
+  if (n === 'receipts')  renderReceipts();
+}
+
+// ══ USER ═══════════════════════════════════════════════════════
+function setUser(u) {
+  S.user = u;
+  ['you','abbey','gp'].forEach(x => { const el = document.getElementById('who-'+x); if(el) el.classList.remove('on'); });
+  const btn = document.getElementById('who-' + u); if(btn) btn.classList.add('on');
+  document.getElementById('gp-view').style.display   = u === 'gp' ? 'block' : 'none';
+  document.getElementById('main-view').style.display = u === 'gp' ? 'none'  : 'block';
+  if (u === 'gp') renderGP();
+}
+
+function renderGP() {
+  const dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const today = new Date();
+  document.getElementById('gp-date').textContent = dayNames[today.getDay()] + ', ' + today.toLocaleDateString('en-US',{month:'long',day:'numeric'});
+  const dk = ['sun','mon','tue','wed','thu','fri','sat'][today.getDay()];
+  const ld = LILY_DAYS.find(d => d.key === dk);
+  const c = document.getElementById('gp-meals');
+  if (!ld) { c.innerHTML = '<div class="card"><div class="card-body" style="text-align:center;padding:20px"><div style="font-size:36px">🌞</div><div style="font-weight:700;margin-top:7px">No babysitting today!</div></div></div>'; return; }
+  c.innerHTML = ld.meals.map(m =>
+    `<div class="gp-mc"><div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--text-soft);margin-bottom:3px">${m.time}</div>
+     <div style="font-weight:800;font-size:15px;margin-bottom:1px">${m.name}</div>
+     ${m.note ? `<div style="font-size:12px;color:var(--text-mid)">${m.note}</div>` : ''}
+     ${m.reheat ? `<div class="rheat">🔥 ${m.reheat}</div>` : ''}</div>`
+  ).join('');
+}
+
+// ══ HOME ═══════════════════════════════════════════════════════
+function renderHome() {
+  const dm = {1:'mon',2:'tue',3:'wed',4:'thu',5:'fri'};
+  const tk = dm[new Date().getDay()];
+  const meal = tk ? MEALS[S.weekMeals[tk]] : null;
+
+  if (meal) {
+    document.getElementById('today-emoji').textContent = meal.emoji;
+    document.getElementById('today-name').textContent  = meal.name;
+    document.getElementById('today-meta').textContent  = meal.time + ' • ' + meal.cal + ' kcal • ' + meal.protein + 'g protein';
+    document.getElementById('today-body').innerHTML    = `<div style="font-size:12px;color:var(--text-soft)"><b style="color:var(--forest)">Lily:</b> ${meal.lily}</div>`;
+  } else {
+    document.getElementById('today-emoji').textContent = '🌅';
+    document.getElementById('today-name').textContent  = 'Weekend — enjoy!';
+    document.getElementById('today-meta').textContent  = 'No planned dinner today';
+    document.getElementById('today-body').innerHTML    = '<div style="color:var(--text-soft);font-size:12px">Rest up for next week!</div>';
+  }
+
+  document.getElementById('week-overview').innerHTML = DAYS.map(d => {
+    const m = MEALS[S.weekMeals[d.key]];
+    return `<div class="mrow">
+      <span class="daypill ${d.type}">${d.label}</span>
+      <div style="flex:1">
+        <div class="mname">${m.emoji} ${m.name}</div>
+        <div class="mmeta">${m.time} • ${m.cal} kcal • <span style="color:#7c6faa">Lily: ${m.lily.substring(0,36)}${m.lily.length>36?'…':''}</span></div>
+      </div></div>`;
+  }).join('');
+
+  renderPantryHome();
+  updateStats();
+}
+
+function renderPantryHome() {
+  const un = PANTRY_QS.filter(q => S.pantryAnswers[q.id] === undefined);
+  const pc = document.getElementById('pantry-home');
+  const pd = document.getElementById('pantry-done');
+  if (!un.length) { pc.style.display = 'none'; pd.style.display = 'block'; return; }
+  pc.style.display = 'block'; pd.style.display = 'none';
+  const q   = un[0];
+  const num = PANTRY_QS.length - un.length + 1;
+  pc.innerHTML = `<div class="pantry-q">
+    <div style="font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--text-soft);margin-bottom:5px">${num} of ${PANTRY_QS.length}</div>
+    <div class="pq-text">${q.q}</div>
+    <div class="pq-btns">
+      <button class="pq-yes" onclick="answerPantry('${q.id}',true,'${q.grocery||'null'}')">✅ Yes, have it</button>
+      <button class="pq-no"  onclick="answerPantry('${q.id}',false,'${q.grocery||'null'}')">❌ Need to buy</button>
+    </div></div>`;
+}
+
+function answerPantry(id, has, gid) {
+  S.pantryAnswers[id] = has;
+  if (gid && gid !== 'null') S.groceryChecked[gid] = has;
+  renderPantryHome();
+}
+
+function updateStats() {
+  const total  = GROCERY_SECTIONS.reduce((a,s) => a + s.items.length, 0);
+  const bought = Object.values(S.groceryChecked).filter(Boolean).length;
+  document.getElementById('st-grocery').textContent = total - bought;
+  const pct = Math.round(Object.values(S.prepDone).filter(Boolean).length / PREP_TASKS.length * 100);
+  document.getElementById('st-prep').textContent = pct + '%';
+}
+
+// ══ MEALS ══════════════════════════════════════════════════════
+function renderMeals() {
+  document.getElementById('meals-list').innerHTML = DAYS.map((d,idx) => {
+    const m = MEALS[S.weekMeals[d.key]] || {emoji:'🍽️',name:'TBD',time:'?',cal:0,protein:0,lily:''};
+    return `<div class="mrow" draggable="true" data-day="${d.key}"
+      ondragstart="dragStart(event)" ondragover="dragOver(event)"
+      ondrop="dropMeal(event)" ondragend="dragEnd(event)">
+      <span class="drag-handle">⠿</span>
+      <span class="daypill ${d.type}">${d.label}</span>
+      <div style="flex:1">
+        <div class="mname">${m.emoji} ${m.name}</div>
+        <div class="mmeta">${m.time} • ${m.cal} kcal • ${m.protein}g P</div>
+        <div style="font-size:10.5px;color:#7c6faa;margin-top:2px">🧒 ${m.lily}</div>
+      </div>
+      <button class="swapbtn" onclick="openSwap('${d.key}')">Swap</button>
+    </div>`;
+  }).join('');
+  renderLilyCards();
+}
+
+function renderLilyCards() {
+  document.getElementById('lily-cards').innerHTML = LILY_DAYS.map(day =>
+    `<div class="lday">
+      <div class="lday-hdr" style="background:${day.color}">
+        <div class="lday-name">🧒 ${day.label}</div>
+        <div class="lday-sub">Abbey works • Grandparents babysit</div>
+      </div>
+      ${day.meals.map((m,mi) => `<div class="lily-meal-row">
+        <div class="lmtime">${m.time}</div>
+        <div style="flex:1">
+          <div class="lmname" onclick="inlineEditLily('${day.key}',${mi},this)" style="cursor:pointer">${m.name}</div>
+          ${m.note ? `<div class="lmnote">${m.note}</div>` : ''}
+          ${m.reheat ? `<div class="rheat">🔥 ${m.reheat}</div>` : ''}
+        </div>
+        <button class="lily-edit-btn" onclick="openLilyEdit('${day.key}',${mi})">✏️</button>
+        <button class="lily-del-btn" onclick="deleteLilyMeal('${day.key}',${mi})">×</button>
+      </div>`).join('')}
+      <div class="lily-add-row">
+        <select class="lily-time-sel" id="lt-${day.key}">
+          <option>Breakfast</option><option>Snack</option><option>Lunch</option><option>Dinner</option>
+        </select>
+        <input class="lily-add-input" id="li-${day.key}" placeholder="Quick add…"
+          onkeydown="if(event.key==='Enter')addLilyMealInline('${day.key}')">
+        <button class="lily-add-btn" onclick="addLilyMealInline('${day.key}')">+</button>
+      </div>
+    </div>`
+  ).join('');
+}
+
+// ══ SWAP ═══════════════════════════════════════════════════════
+function openSwap(dk) {
+  S.swapDay = dk; S.swapSel = null;
+  const day = DAYS.find(d => d.key === dk);
+  document.getElementById('swap-title').textContent = 'Swap ' + day.full + ' Dinner';
+  document.getElementById('swap-opts').innerHTML = Object.values(MEALS)
+    .filter(m => m.id !== S.weekMeals[dk])
+    .map(m => `<div class="sopt" id="so-${m.id}" onclick="selSwap('${m.id}')">
+      <span style="font-size:24px">${m.emoji}</span>
+      <div><div style="font-weight:700;font-size:13.5px">${m.name}</div>
+      <div style="font-size:11px;color:var(--text-soft)">${m.cal} kcal • ${m.protein}g P • ${m.time}</div></div>
+    </div>`).join('');
+  openModal('swap-modal');
+}
+function selSwap(id) {
+  document.querySelectorAll('.sopt').forEach(e => e.classList.remove('sel'));
+  const el = document.getElementById('so-' + id); if(el) el.classList.add('sel');
+  S.swapSel = id;
+}
+function confirmSwap() {
+  if (S.swapSel && S.swapDay) { S.weekMeals[S.swapDay] = S.swapSel; renderHome(); renderMeals(); }
+  closeModal('swap-modal');
+}
+
+// ── DRAG & DROP ────────────────────────────────────────────
+let _dragSrcDay = null;
+function dragStart(e) {
+  _dragSrcDay = e.currentTarget.dataset.day;
+  e.currentTarget.classList.add('dragging');
+  e.dataTransfer.effectAllowed = 'move';
+}
+function dragOver(e) {
+  e.preventDefault();
+  document.querySelectorAll('.mrow.drag-over').forEach(r => r.classList.remove('drag-over'));
+  e.currentTarget.classList.add('drag-over');
+}
+function dropMeal(e) {
+  e.preventDefault();
+  const tgt = e.currentTarget.dataset.day;
+  if (_dragSrcDay && tgt && _dragSrcDay !== tgt) {
+    const tmp = S.weekMeals[_dragSrcDay];
+    S.weekMeals[_dragSrcDay] = S.weekMeals[tgt];
+    S.weekMeals[tgt] = tmp;
+    renderMeals(); renderHome();
+  }
+  _dragSrcDay = null;
+}
+function dragEnd(e) {
+  document.querySelectorAll('.mrow').forEach(r => r.classList.remove('dragging','drag-over'));
+}
+
+// ── LILY MEAL EDITING ──────────────────────────────────────
+function addLilyMealInline(dayKey) {
+  const day  = LILY_DAYS.find(d => d.key === dayKey);
+  const inp  = document.getElementById('li-' + dayKey);
+  const tsel = document.getElementById('lt-' + dayKey);
+  const name = inp?.value.trim();
+  if (!day || !name) return;
+  day.meals.push({time: tsel?.value || 'Snack', name, note:'', reheat:null});
+  if (inp) inp.value = '';
+  renderLilyCards();
+}
+function deleteLilyMeal(dayKey, idx) {
+  const day = LILY_DAYS.find(d => d.key === dayKey);
+  if (day) { day.meals.splice(idx, 1); renderLilyCards(); }
+}
+function inlineEditLily(dayKey, idx, el) {
+  const day = LILY_DAYS.find(d => d.key === dayKey);
+  if (!day) return;
+  const cur = day.meals[idx].name;
+  const inp = document.createElement('input');
+  inp.className = 'inline-edit';
+  inp.value = cur;
+  el.replaceWith(inp);
+  inp.focus(); inp.select();
+  const save = () => {
+    day.meals[idx].name = inp.value.trim() || cur;
+    renderLilyCards();
+  };
+  inp.addEventListener('blur', save);
+  inp.addEventListener('keydown', ev => {
+    if (ev.key === 'Enter') inp.blur();
+    if (ev.key === 'Escape') { inp.value = cur; inp.blur(); }
+  });
+}
+function openLilyEdit(dayKey, idx) {
+  const day = LILY_DAYS.find(d => d.key === dayKey);
+  if (!day) return;
+  const m = day.meals[idx];
+  document.getElementById('lily-edit-body').innerHTML = `
+    <div class="slabel">Name</div>
+    <input class="lily-add-input" id="le-name" value="${m.name}" style="width:100%;margin-bottom:12px">
+    <div class="slabel">Time of day</div>
+    <select class="lily-time-sel" id="le-time" style="width:100%;margin-bottom:12px">
+      ${['Breakfast','Snack','Lunch','Dinner'].map(t => `<option ${t===m.time?'selected':''}>${t}</option>`).join('')}
+    </select>
+    <div class="slabel">Note (optional)</div>
+    <input class="lily-add-input" id="le-note" value="${m.note||''}" placeholder="e.g. Blue container" style="width:100%;margin-bottom:12px">
+    <div class="slabel">Reheat instructions (optional)</div>
+    <input class="lily-add-input" id="le-reheat" value="${m.reheat||''}" placeholder="e.g. 2 min microwave" style="width:100%;margin-bottom:16px">
+    <button class="btn-p" onclick="saveLilyEdit('${dayKey}',${idx})">Save</button>
+    <button class="btn-g" onclick="closeModal('lily-edit-modal')">Cancel</button>`;
+  openModal('lily-edit-modal');
+}
+function saveLilyEdit(dayKey, idx) {
+  const day = LILY_DAYS.find(d => d.key === dayKey);
+  if (!day) return;
+  day.meals[idx].name   = document.getElementById('le-name').value.trim()   || day.meals[idx].name;
+  day.meals[idx].time   = document.getElementById('le-time').value;
+  day.meals[idx].note   = document.getElementById('le-note').value.trim();
+  day.meals[idx].reheat = document.getElementById('le-reheat').value.trim() || null;
+  closeModal('lily-edit-modal'); renderLilyCards();
+}
+
+// ── LILY QUICK ADD MODAL ───────────────────────────────────
+const LILY_PRESETS = ['Panko Tenders','Frozen Pancakes','Plain Ravioli','Korean Beef + Rice','Mini Pizza','Mac & Cheese','Yogurt + Fruit','PB&J','Scrambled Eggs','Sweet Potato','Crackers + Cheese','Blueberries'];
+function openLilyQuickAdd() {
+  let qDay = null, qTime = 'Snack';
+  document.getElementById('lily-qa-body').innerHTML = `
+    <div class="slabel">Which day?</div>
+    <div style="display:flex;gap:7px;margin-bottom:14px">
+      ${LILY_DAYS.map(d => `<button class="qa-day-btn" id="lqd-${d.key}" onclick="
+        document.querySelectorAll('.qa-day-btn').forEach(b=>b.classList.remove('sel'));
+        this.classList.add('sel'); window._lqDay='${d.key}';">${d.label.substring(0,3)}</button>`).join('')}
+    </div>
+    <div class="slabel">Which meal?</div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px">
+      ${['Breakfast','Snack','Lunch','Dinner'].map(t => `<button class="qa-time-btn" id="lqt-${t}" onclick="
+        document.querySelectorAll('.qa-time-btn').forEach(b=>b.classList.remove('sel'));
+        this.classList.add('sel'); window._lqTime='${t}';">${t}</button>`).join('')}
+    </div>
+    <div class="slabel">Type a meal or snack</div>
+    <input class="lily-add-input" id="lqa-name" placeholder="e.g. Grapes + crackers…" style="width:100%;margin-bottom:10px" onkeydown="if(event.key==='Enter')submitLilyQA()">
+    <div class="slabel">Or pick a common item</div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">
+      ${LILY_PRESETS.map(s => `<button style="padding:5px 10px;border-radius:14px;border:1.5px solid var(--mint);background:white;font-family:Outfit,sans-serif;font-size:11.5px;font-weight:600;cursor:pointer;color:var(--forest-mid)" onclick="document.getElementById('lqa-name').value='${s}'">${s}</button>`).join('')}
+    </div>
+    <div class="slabel">Note (optional)</div>
+    <input class="lily-add-input" id="lqa-note" placeholder="e.g. Fridge, blue container" style="width:100%;margin-bottom:10px">
+    <div class="slabel">Reheat (optional)</div>
+    <input class="lily-add-input" id="lqa-reheat" placeholder="e.g. 2 min microwave" style="width:100%;margin-bottom:16px">
+    <button class="btn-p" onclick="submitLilyQA()">Add to Lily's Day</button>
+    <button class="btn-g" onclick="closeModal('lily-qa-modal')">Cancel</button>`;
+  window._lqDay = null; window._lqTime = 'Snack';
+  openModal('lily-qa-modal');
+}
+function submitLilyQA() {
+  const dayKey = window._lqDay;
+  const time   = window._lqTime || 'Snack';
+  const name   = document.getElementById('lqa-name')?.value.trim();
+  const note   = document.getElementById('lqa-note')?.value.trim() || '';
+  const reheat = document.getElementById('lqa-reheat')?.value.trim() || null;
+  if (!dayKey) { alert('Please select a day first'); return; }
+  if (!name)   { alert('Please enter a meal name'); return; }
+  const day = LILY_DAYS.find(d => d.key === dayKey);
+  if (day) day.meals.push({time, name, note, reheat});
+  closeModal('lily-qa-modal'); renderLilyCards();
+}
+
+// ══ GROCERY ════════════════════════════════════════════════════
+function renderGrocery() {
+  document.getElementById('grocery-container').innerHTML = GROCERY_SECTIONS.map(sec =>
+    `<div class="card"><div class="card-body" style="padding:8px 12px">
+      <div class="gsec-hdr">${sec.section}</div>
+      ${sec.items.map(item => {
+        const chk = !!S.groceryChecked[item.id];
+        return `<div class="gitem ${chk ? 'checked' : ''}" onclick="toggleGrocery('${item.id}')">
+          <div class="chkbox ${chk ? 'checked' : ''}">${chk ? ck() : ''}</div>
+          <span class="glabel">${item.name}</span>
+          <span class="gqty">${item.qty}</span>
+        </div>`;
+      }).join('')}
+    </div></div>`
+  ).join('');
+  updateStats();
+}
+function toggleGrocery(id) { S.groceryChecked[id] = !S.groceryChecked[id]; renderGrocery(); }
+function clearGrocery() { Object.keys(S.groceryChecked).forEach(k => { if(S.groceryChecked[k]) delete S.groceryChecked[k]; }); renderGrocery(); }
+
+// ══ PREP ═══════════════════════════════════════════════════════
+const PREP_GRP = {
+  lunch:  {label:'Your Lunches', color:'#1565c0'},
+  lily:   {label:"Lily's Meals", color:'#6a1b9a'},
+  dinner: {label:'Dinner Prep',  color:'#2e7d32'},
+};
+function renderPrep() {
+  const chips = ['All','0:00–0:20','0:20–0:45','0:45–1:00','1:00+'];
+  document.getElementById('prep-chips').innerHTML = chips.map((c,i) =>
+    `<button class="tchip ${i===0?'on':''}" onclick="filterPrep('${c}',this)">${c}</button>`
+  ).join('');
+  renderPrepList(PREP_TASKS);
+}
+function filterPrep(f, btn) {
+  document.querySelectorAll('.tchip').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  const rng = {'0:00–0:20':[0,20],'0:20–0:45':[20,45],'0:45–1:00':[45,60],'1:00+':[60,999]};
+  const tasks = f === 'All' ? PREP_TASKS : PREP_TASKS.filter(t => {
+    const [h,m] = t.time.split(':').map(Number); const mn = h*60+m;
+    const [lo,hi] = rng[f]; return mn >= lo && mn < hi;
+  });
+  renderPrepList(tasks);
+}
+function renderPrepList(tasks) {
+  const bg = {};
+  tasks.forEach(t => { if(!bg[t.group]) bg[t.group] = []; bg[t.group].push(t); });
+  document.getElementById('prep-list').innerHTML = Object.entries(bg).map(([g, items]) => {
+    const grp = PREP_GRP[g];
+    return `<div style="margin-bottom:3px">
+      <div style="font-size:9.5px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:${grp.color};margin:10px 0 5px 3px">${grp.label}</div>
+      <div class="card"><div class="card-body" style="padding:6px 12px">
+        ${items.map(t => {
+          const done = !!S.prepDone[t.id];
+          return `<div class="chk ${done ? 'done' : ''}" onclick="togglePrep('${t.id}')">
+            <div class="chkbox ${done ? 'checked' : ''}">${done ? ck() : ''}</div>
+            <div>
+              <div class="chk-lbl"><span style="font-size:9.5px;color:${grp.color};font-weight:800">${t.time}</span>  ${t.task}</div>
+              ${t.sub ? `<div class="chk-sub">${t.sub}</div>` : ''}
+            </div></div>`;
+        }).join('')}
+      </div></div></div>`;
+  }).join('');
+}
+function togglePrep(id) { S.prepDone[id] = !S.prepDone[id]; updatePrepUI(); }
+function updatePrepUI() {
+  const done  = Object.values(S.prepDone).filter(Boolean).length;
+  const total = PREP_TASKS.length;
+  const pct   = Math.round(done / total * 100);
+  document.getElementById('ring-pct').textContent  = pct + '%';
+  document.getElementById('prep-sub').textContent  = done + ' of ' + total + ' tasks';
+  const c = 2 * Math.PI * 20;
+  document.getElementById('ring-circle').setAttribute('stroke-dashoffset', (c * (1 - pct/100)).toFixed(1));
+  document.getElementById('st-prep').textContent = pct + '%';
+}
+
+// ══ LIBRARY ════════════════════════════════════════════════════
+const TAG_COLOR = {'quick':'#fff4e0','high-protein':'#e8f5e9','healthy':'#e3f2fd','lily-friendly':'#f3e5f5','lily-fave':'#fce4ec'};
+const TAG_ICON  = {'quick':'⚡','high-protein':'💪','healthy':'🥗','lily-friendly':'🧒','lily-fave':'⭐'};
+
+function renderLibrary(filter) {
+  filter = filter || '';
+  const f = filter.toLowerCase();
+  const items = S.mealLibrary.filter(m => !f || m.name.toLowerCase().includes(f));
+  document.getElementById('lib-grid').innerHTML =
+    items.map(m => `<div class="lcard" onclick="openMealDetail('${m.id}')">
+      ${m.inRotation ? `<div class="in-rot">${ck()}</div>` : ''}
+      <div class="lce">${m.emoji}</div>
+      <div class="lcn">${m.name}</div>
+      <div class="lcm">${m.time} • ${m.cal} kcal • ${m.protein}g P</div>
+      <div class="lct">${m.tags.slice(0,2).map(t =>
+        `<span style="font-size:9px;font-weight:700;padding:2px 6px;border-radius:8px;background:${TAG_COLOR[t]||'#f0f0f0'};color:var(--text-mid)">${TAG_ICON[t]||''} ${t}</span>`
+      ).join('')}</div>
+    </div>`).join('') +
+    `<div class="lcard" style="border:2px dashed var(--mint);background:var(--foam);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:130px" onclick="document.getElementById('recipe-file').click()">
+      <div style="font-size:28px;margin-bottom:5px">📸</div>
+      <div style="font-weight:700;font-size:12px;color:var(--forest);text-align:center">Add from<br>Recipe Photo</div>
+    </div>`;
+}
+function filterLib(v) { renderLibrary(v); }
+
+// ══ MEAL DETAIL ════════════════════════════════════════════════
+function openMealDetail(id) {
+  const meal = MEALS[id] || S.mealLibrary.find(m => m.id === id);
+  if (!meal) { openLibSwap(id); return; }
+  const instructions = meal.instructions || [];
+  document.getElementById('detail-body').innerHTML =
+    `<div class="rd-hdr">
+      <div class="rd-name">${meal.emoji} ${meal.name}</div>
+      <div class="rd-meta">${meal.time} • ${meal.cal} kcal • ${meal.protein}g protein • ${meal.carbs||'?'}g carbs • ${meal.fat||'?'}g fat</div>
+      ${meal.lily ? `<div style="font-size:11.5px;color:#c2dbc9;margin-top:5px">🧒 Lily: ${meal.lily}</div>` : ''}
+    </div>
+    ${instructions.length
+      ? `<div class="slabel">Instructions</div>` + instructions.map((s,i) =>
+          `<div class="istep"><div class="step-num">${i+1}</div><div class="step-text">${s}</div></div>`
+        ).join('')
+      : '<div style="color:var(--text-soft);font-size:13px;padding:8px 0">No instructions added yet.</div>'
+    }
+    <div class="slabel">Macros</div>
+    <div class="mpills">
+      <div class="mpill" style="background:#e8f5e9"><div class="mv" style="color:#2e7d32;font-size:16px">${meal.cal}</div><div class="ml">kcal</div></div>
+      <div class="mpill" style="background:#e3f2fd"><div class="mv" style="color:#1565c0;font-size:16px">${meal.protein}g</div><div class="ml">Protein</div></div>
+      <div class="mpill" style="background:#fff8e1"><div class="mv" style="color:#f57f17;font-size:16px">${meal.carbs||'?'}g</div><div class="ml">Carbs</div></div>
+      <div class="mpill" style="background:#fce4ec"><div class="mv" style="color:#c62828;font-size:16px">${meal.fat||'?'}g</div><div class="ml">Fat</div></div>
+    </div>
+    <button class="btn-p" onclick="closeModal('detail-modal');openLibSwap('${id}')">Add to This Week</button>
+    <button class="btn-g" onclick="closeModal('detail-modal')">Close</button>`;
+  openModal('detail-modal');
+}
+
+function openLibSwap(mealId) {
+  const meal = MEALS[mealId] || S.mealLibrary.find(m => m.id === mealId);
+  document.getElementById('lib-swap-title').textContent = 'Use "' + (meal ? meal.name : mealId) + '"';
+  document.getElementById('lib-swap-body').innerHTML =
+    `<div style="font-size:12.5px;color:var(--text-soft);margin-bottom:13px">Which day should we use this meal?</div>` +
+    DAYS.filter(d => d.type !== 'pizza').map(d =>
+      `<div class="meal-slot" onclick="assignLibMeal('${mealId}','${d.key}')">
+        <div class="ms-day">${d.label}</div>
+        <div class="ms-info">
+          <div class="ms-name">${MEALS[S.weekMeals[d.key]]?.name || 'TBD'}</div>
+          <div class="ms-meta">${d.type === 'work' ? '⚡ Abbey works' : 'Off day'}</div>
+        </div>
+        <div class="ms-swap">→ Swap</div>
+      </div>`
+    ).join('') +
+    `<button class="btn-g" onclick="closeModal('lib-swap-modal')">Cancel</button>`;
+  openModal('lib-swap-modal');
+}
+function assignLibMeal(mealId, dayKey) {
+  S.weekMeals[dayKey] = mealId;
+  if (!MEALS[mealId]) { const lb = S.mealLibrary.find(m => m.id === mealId); if(lb) MEALS[mealId] = {...lb, lily:'Check Lily preferences', instructions:[]}; }
+  const lb = S.mealLibrary.find(m => m.id === mealId); if(lb) lb.inRotation = true;
+  closeModal('lib-swap-modal'); renderHome(); renderMeals(); renderLibrary();
+}
+
+// ══ RECIPE PHOTO ═══════════════════════════════════════════════
+async function handleRecipePhoto(event) {
+  const file = event.target.files[0]; if(!file) return; event.target.value = '';
+  document.getElementById('recipe-modal-body').innerHTML =
+    `<div style="text-align:center;padding:28px 18px">
+      <div class="scan-spinner"></div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:17px;color:var(--forest);margin-bottom:6px">Reading your recipe…</h3>
+      <p style="font-size:12.5px;color:var(--text-soft)">Works with printed & handwritten ✓</p>
+    </div>`;
+  openModal('recipe-modal');
+  const reader = new FileReader();
+  reader.onload = async e => {
+    const b64 = e.target.result.split(',')[1];
+    try {
+      const resp = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({model:'claude-sonnet-4-20250514', max_tokens:1000,
+          messages:[{role:'user', content:[
+            {type:'image', source:{type:'base64', media_type:file.type, data:b64}},
+            {type:'text', text:'This is a recipe photo. Return ONLY a JSON object with these fields: {"name":"","cookTime":"","servings":4,"calories":0,"protein":0,"carbs":0,"fat":0,"ingredients":[],"instructions":[],"lilyFriendly":true,"lilyNote":""}. No markdown fences, no extra text, pure JSON only.'}
+          ]}]})});
+      const data = await resp.json();
+      let r; try { r = JSON.parse(data.content[0].text); } catch { r = null; }
+      if (r) showRecipeResult(r); else showScanError('recipe-modal-body', 'recipe-modal');
+    } catch(err) { showScanError('recipe-modal-body', 'recipe-modal'); }
+  };
+  reader.readAsDataURL(file);
+}
+function showRecipeResult(r) {
+  const id = 'recipe_' + Date.now();
+  document.getElementById('recipe-modal-body').innerHTML =
+    `<div class="sheet-title">📖 Recipe Found!</div>
+    <div style="background:var(--foam);border-radius:13px;padding:12px 14px;margin-bottom:13px">
+      <div style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--forest);margin-bottom:2px">${r.name}</div>
+      <div style="font-size:11.5px;color:var(--text-soft)">${r.cookTime} • ${r.servings} servings • ${r.calories} kcal • ${r.protein}g protein</div>
+      ${r.lilyFriendly ? `<div style="font-size:11px;color:#6a1b9a;margin-top:4px">🧒 Lily: ${r.lilyNote}</div>` : ''}
+    </div>
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--text-soft);margin-bottom:7px">Tap to remove ingredients you already have:</div>
+    <div id="recipe-chips" style="margin-bottom:14px">
+      ${(r.ingredients||[]).map((ing,i) => `<span class="ing-chip" id="ic-${i}" onclick="toggleIng(${i})"><span>${ing}</span><span style="color:var(--tomato);font-weight:900;font-size:13px;margin-left:3px">×</span></span>`).join('')}
+    </div>
+    <button class="btn-p" onclick="addRecipeToLib(${JSON.stringify(r).replace(/</g,'\u003c')}, '${id}')">Add to Library + Grocery List</button>
+    <button class="btn-g" onclick="closeModal('recipe-modal')">Cancel</button>`;
+}
+function toggleIng(i) { const el = document.getElementById('ic-' + i); if(el) el.classList.toggle('removed'); }
+function addRecipeToLib(r, id) {
+  S.mealLibrary.unshift({id, name:r.name, emoji:'📖', time:r.cookTime, cal:r.calories, protein:r.protein, tags:r.lilyFriendly?['lily-friendly']:[], inRotation:false, isCustom:true});
+  MEALS[id] = {id, name:r.name, emoji:'📖', time:r.cookTime, cal:r.calories, protein:r.protein, carbs:r.carbs||0, fat:r.fat||0, tags:[], lily:r.lilyNote||'', instructions:r.instructions||[]};
+  const chips = document.querySelectorAll('.ing-chip');
+  let custom = GROCERY_SECTIONS.find(s => s.section === '📖 From Recipes');
+  if (!custom) { custom = {section:'📖 From Recipes', items:[]}; GROCERY_SECTIONS.push(custom); }
+  chips.forEach((c,i) => { if(!c.classList.contains('removed')) custom.items.push({id:id+'_g'+i, name:r.ingredients[i]||'Ingredient', qty:r.name}); });
+  closeModal('recipe-modal'); renderLibrary(); goView('library');
+}
+function showScanError(containerId, modalId) {
+  document.getElementById(containerId).innerHTML =
+    `<div style="text-align:center;padding:28px 18px">
+      <div style="font-size:40px;margin-bottom:11px">😕</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:17px;color:var(--forest);margin-bottom:6px">Couldn't read this</h3>
+      <p style="font-size:12.5px;color:var(--text-soft)">Try a clearer photo with good lighting. Make sure the recipe fills the frame.</p>
+    </div>
+    <button class="btn-p" style="margin-top:12px" onclick="closeModal('${modalId}')">Close</button>`;
+}
+
+// ══ BARCODE SCANNER ════════════════════════════════════════════
+// On iPhone/Safari: BarcodeDetector is NOT supported. We show live camera,
+// user taps "Capture" to freeze a frame and send to Claude vision.
+// On Chrome/Android: BarcodeDetector auto-detects in real time.
+// Either way there's always a manual "Capture" button so it never silently fails.
+
+async function openBarcodeScanner() {
+  renderBarcodeCameraUI();
+  openModal('barcode-modal');
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({
+      video: {facingMode:'environment', width:{ideal:1920}, height:{ideal:1080}}
+    });
+    S.barcodeStream = stream;
+    const video = document.getElementById('bvideo');
+    if (!video) return;
+    video.srcObject = stream;
+    await video.play();
+    document.getElementById('bc-hint').textContent = hasBarcodeDetector()
+      ? 'Scanning automatically…'
+      : 'Hold barcode steady, then tap Capture';
+    // Wait for camera to warm up, then begin
+    S._bcTimer = setTimeout(() => beginScanning(video), 1200);
+  } catch(err) {
+    document.getElementById('barcode-body').innerHTML = `
+      <div style="text-align:center;padding:24px 16px">
+        <div style="font-size:38px;margin-bottom:9px">📷</div>
+        <h3 class="pf" style="font-size:17px;color:var(--forest)">Camera access needed</h3>
+        <p style="font-size:12px;color:var(--text-soft);margin-top:5px">Or upload a photo of the barcode below.</p>
+      </div>
+      <input type="file" id="bc-file" accept="image/*" style="display:none" onchange="handleBarcodeFile(event)">
+      <button class="btn-p" onclick="document.getElementById('bc-file').click()">📷 Upload Barcode Photo</button>
+      <button class="btn-g" onclick="closeModal('barcode-modal')">Cancel</button>`;
+  }
+}
+
+function hasBarcodeDetector() {
+  return !!(window.BarcodeDetector);
+}
+
+function renderBarcodeCameraUI() {
+  document.getElementById('barcode-body').innerHTML = `
+    <div class="sheet-title">📦 Scan Barcode</div>
+    <div id="bvw"><video id="bvideo" autoplay muted playsinline></video>
+      <div class="scan-ol"><div class="scan-frame"></div><div class="scan-line"></div></div>
+    </div>
+    <p id="bc-hint" style="font-size:12px;color:var(--text-soft);text-align:center;margin:8px 0 10px">Starting camera…</p>
+    <div style="display:flex;gap:8px">
+      <button class="btn-p" style="flex:1;font-size:13px" onclick="captureNow()">📸 Capture Frame</button>
+      <button style="padding:10px 14px;background:rgba(0,0,0,.07);border:none;border-radius:12px;font-size:13px;cursor:pointer" onclick="stopBarcode();closeModal('barcode-modal')">✕</button>
+    </div>
+    <div style="font-size:10.5px;color:var(--text-soft);text-align:center;margin-top:7px">Capture works on all devices · Auto-detects on Chrome/Android</div>`;
+}
+
+function beginScanning(video) {
+  if (!hasBarcodeDetector()) return; // iPhone: user taps Capture manually
+  try {
+    const det = new BarcodeDetector({formats:['ean_13','ean_8','upc_a','upc_e','code_128','code_39','qr_code']});
+    let active = true;
+    S._bcActive = () => { active = false; };
+    const loop = async () => {
+      if (!active || !S.barcodeStream) return;
+      try {
+        const found = await det.detect(video);
+        if (found.length) { active = false; stopBarcode(); lookupBarcode(found[0].rawValue); return; }
+      } catch(e) {}
+      requestAnimationFrame(loop);
+    };
+    loop();
+    // After 9s with no auto-detect, auto-capture for the user
+    S._bcTimer = setTimeout(() => { if (active) captureNow(); }, 9000);
+  } catch(e) {}
+}
+
+async function captureNow() {
+  clearTimeout(S._bcTimer);
+  if (S._bcActive) { S._bcActive(); S._bcActive = null; }
+  const video = document.getElementById('bvideo');
+  // If video not ready yet, retry once
+  if (!video || video.videoWidth === 0) {
+    setTimeout(captureNow, 700);
+    return;
+  }
+  const canvas = document.createElement('canvas');
+  canvas.width = video.videoWidth; canvas.height = video.videoHeight;
+  canvas.getContext('2d').drawImage(video, 0, 0);
+  stopBarcode();
+  showBarcodeProcessing();
+  const b64 = canvas.toDataURL('image/jpeg', 0.92).split(',')[1];
+  await askClaudeForBarcode(b64, 'image/jpeg');
+}
+
+async function handleBarcodeFile(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  event.target.value = '';
+  showBarcodeProcessing();
+  const b64 = await new Promise(res => {
+    const r = new FileReader();
+    r.onload = e => res(e.target.result.split(',')[1]);
+    r.readAsDataURL(file);
+  });
+  await askClaudeForBarcode(b64, file.type);
+}
+
+function showBarcodeProcessing() {
+  document.getElementById('barcode-body').innerHTML = `
+    <div style="text-align:center;padding:32px 16px">
+      <div class="scan-spinner" style="margin:0 auto 14px"></div>
+      <h3 class="pf" style="font-size:17px;color:var(--forest)">Reading barcode…</h3>
+      <p style="font-size:11.5px;color:var(--text-soft);margin-top:5px">Sending to AI vision</p>
+    </div>`;
+}
+
+async function askClaudeForBarcode(b64, mediaType) {
+  try {
+    const resp = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 100,
+        messages: [{
+          role: 'user',
+          content: [
+            {type:'image', source:{type:'base64', media_type:mediaType, data:b64}},
+            {type:'text',  text:'Look for a barcode, UPC, or EAN number in this image. Reply with ONLY the digits — nothing else. If you cannot find any barcode number, reply with exactly: NOTFOUND'}
+          ]
+        }]
+      })
+    });
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const data    = await resp.json();
+    const raw     = (data.content?.[0]?.text || '').trim();
+    const digits  = raw.replace(/\D/g, '');
+    if (!raw || raw.includes('NOTFOUND') || digits.length < 6) {
+      showBarcodeNotFound();
+    } else {
+      lookupBarcode(digits);
+    }
+  } catch(err) {
+    document.getElementById('barcode-body').innerHTML = `
+      <div style="text-align:center;padding:28px 16px">
+        <div style="font-size:36px;margin-bottom:9px">⚠️</div>
+        <h3 class="pf" style="font-size:17px;color:var(--forest)">API not reachable</h3>
+        <p style="font-size:12px;color:var(--text-soft);margin-top:5px">This works when deployed to GitHub Pages, not in the claude.ai preview.</p>
+      </div>
+      <button class="btn-p" onclick="openBarcodeScanner()">Try Again</button>
+      <button class="btn-g" onclick="closeModal('barcode-modal')">Close</button>`;
+  }
+}
+
+function stopBarcode() {
+  clearTimeout(S._bcTimer);
+  if (S._bcActive) { S._bcActive(); S._bcActive = null; }
+  if (S.barcodeStream) { S.barcodeStream.getTracks().forEach(t => t.stop()); S.barcodeStream = null; }
+}
+function showBarcodeNotFound() {
+  document.getElementById('barcode-body').innerHTML =
+    `<div style="text-align:center;padding:28px 18px">
+      <div style="font-size:40px;margin-bottom:10px">🔍</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:17px;color:var(--forest)">Product not found</h3>
+      <p style="font-size:12.5px;color:var(--text-soft);margin-top:5px">Try again in better lighting, or search manually.</p>
+    </div>
+    <button class="btn-p" onclick="openBarcodeScanner()">Try Again</button>
+    <button class="btn-g" onclick="closeModal('barcode-modal')">Close</button>`;
+}
+function addToLilyDay(name, dayKey) {
+  const day = LILY_DAYS.find(d => d.key === dayKey);
+  if (day) {
+    const idx = day.meals.findIndex(m => m.time === 'Snack' && m.name.includes('Tenders'));
+    if (idx > -1) { day.meals[idx].name = name; day.meals[idx].note = 'Scanned product'; day.meals[idx].reheat = null; }
+    else day.meals.push({time:'Snack', name, note:'Scanned product', reheat:null});
+  }
+  closeModal('barcode-modal'); renderMeals();
+}
+function addBarcodeToGrocery(name) {
+  let custom = GROCERY_SECTIONS.find(s => s.section === '📦 Scanned Products');
+  if (!custom) { custom = {section:'📦 Scanned Products', items:[]}; GROCERY_SECTIONS.push(custom); }
+  if (!custom.items.find(i => i.name === name)) custom.items.push({id:'bc_'+Date.now(), name, qty:'Scanned'});
+  closeModal('barcode-modal'); goView('grocery');
+}
+
+// ══ NUTRITION ══════════════════════════════════════════════════
+function renderNutrition() {
+  const lunchItems = [
+    {name:'Grilled Chicken Breast', amount:'6 oz',      cal:280, protein:53},
+    {name:'Brown Rice (cooked)',     amount:'3/4 cup',   cal:165, protein:3.5},
+    {name:'Broccoli (steamed)',      amount:'1.5 cups',  cal:45,  protein:4},
+    {name:'Sweet Potato (baked)',    amount:'1 medium',  cal:115, protein:2},
+  ];
+  document.getElementById('lunch-macros').innerHTML =
+    lunchItems.map(i =>
+      `<div style="display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid #f0f0f0">
+        <div><div style="font-weight:600;font-size:13px">${i.name}</div><div style="font-size:10.5px;color:var(--text-soft)">${i.amount}</div></div>
+        <div style="text-align:right"><div style="font-weight:700;font-size:13px">${i.cal} kcal</div><div style="font-size:10.5px;color:var(--forest-light)">${i.protein}g P</div></div>
+      </div>`
+    ).join('') +
+    `<div style="display:flex;justify-content:space-between;padding:8px 0 0;font-weight:700;font-size:13px"><span>Total</span><span style="color:var(--forest)">~605 kcal • ~62.5g P</span></div>
+    <div style="margin-top:9px">
+      <div class="plbl"><span>Protein</span><span>62.5g / 190g</span></div>
+      <div class="pbar-out"><div class="pbar-in" style="width:33%;background:#1565c0"></div></div>
+      <div class="plbl" style="margin-top:6px"><span>Calories</span><span>605 / 3,100</span></div>
+      <div class="pbar-out"><div class="pbar-in" style="width:20%;background:var(--forest-light)"></div></div>
+    </div>`;
+
+  renderSnacks();
+
+  const dm = {1:'mon',2:'tue',3:'wed',4:'thu',5:'fri'};
+  const tk = dm[new Date().getDay()];
+  const meal = tk ? MEALS[S.weekMeals[tk]] : null;
+  document.getElementById('dinner-nutrition').innerHTML = meal
+    ? `<div style="display:flex;align-items:center;gap:11px;margin-bottom:10px">
+        <div style="font-size:32px">${meal.emoji}</div>
+        <div><div style="font-weight:700;font-size:14.5px">${meal.name}</div><div style="font-size:11px;color:var(--text-soft)">Tonight's dinner</div></div>
+      </div>
+      <div class="mpills">
+        ${[['Cal',meal.cal,'#2e7d32','#e8f5e9'],['Protein',meal.protein+'g','#1565c0','#e3f2fd'],['Carbs',meal.carbs+'g','#f57f17','#fff8e1'],['Fat',meal.fat+'g','#c62828','#fce4ec']].map(([l,v,c,bg]) =>
+          `<div class="mpill" style="background:${bg}"><div class="mv" style="color:${c};font-size:16px">${v}</div><div class="ml">${l}</div></div>`
+        ).join('')}
+      </div>`
+    : '<div style="text-align:center;padding:20px;color:var(--text-soft);font-size:13px">🌙 No dinner scheduled today</div>';
+}
+
+function renderSnacks() {
+  document.getElementById('snack-list').innerHTML = S.snacks.map(s =>
+    `<div class="snack-row">
+      <input class="snack-name" value="${s.name}" onchange="updateSnack('${s.id}','name',this.value)">
+      <input class="snack-num" value="${s.cal}" onchange="updateSnack('${s.id}','cal',this.value)">
+      <span style="font-size:10px;color:var(--text-soft);flex-shrink:0">kcal</span>
+      <input class="snack-num" value="${s.protein}" onchange="updateSnack('${s.id}','protein',this.value)" style="width:44px">
+      <span style="font-size:10px;color:var(--text-soft);flex-shrink:0">P</span>
+      <button class="snack-del" onclick="removeSnack('${s.id}')">×</button>
+    </div>`
+  ).join('');
+  const totCal  = S.snacks.reduce((a,s) => a + (+s.cal||0), 0);
+  const totProt = S.snacks.reduce((a,s) => a + (+s.protein||0), 0);
+  document.getElementById('snack-total').textContent = '~' + totCal + ' kcal • ~' + totProt + 'g P';
+}
+function updateSnack(id, field, val) { const s = S.snacks.find(x => x.id === id); if(s) s[field] = field==='name' ? val : parseFloat(val)||0; renderSnacks(); }
+function removeSnack(id) { S.snacks = S.snacks.filter(s => s.id !== id); renderSnacks(); }
+function addSnack() {
+  const name = document.getElementById('new-snack-name').value.trim();
+  const cal  = parseFloat(document.getElementById('new-snack-cal').value) || 0;
+  const prot = parseFloat(document.getElementById('new-snack-prot').value) || 0;
+  if (!name) return;
+  S.snacks.push({id:'s'+Date.now(), name, cal, protein:prot});
+  document.getElementById('new-snack-name').value = '';
+  document.getElementById('new-snack-cal').value  = '';
+  document.getElementById('new-snack-prot').value = '';
+  renderSnacks();
+}
+
+// ══ RECEIPTS ═══════════════════════════════════════════════════
+function handleReceiptUpload(event) {
+  const file = event.target.files[0]; if(!file) return; event.target.value = '';
+  const reader = new FileReader();
+  reader.onload = e => {
+    S.receipts.unshift({id:'r'+Date.now(), imgData:e.target.result,
+      store:'Market Basket', date:new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}), total:'—'});
+    renderReceipts();
+  };
+  reader.readAsDataURL(file);
+}
+function renderReceipts() {
+  const el = document.getElementById('receipts-list');
+  if (!S.receipts.length) {
+    el.innerHTML = '<div style="text-align:center;padding:32px 18px;color:var(--text-soft)"><div style="font-size:40px;margin-bottom:9px">🧾</div><p style="font-size:13px">No receipts yet.<br>Upload your first one above!</p></div>';
+    return;
+  }
+  el.innerHTML = S.receipts.map(r =>
+    `<div class="receipt-card">
+      <img class="receipt-thumb" src="${r.imgData}" onerror="this.style.display='none'">
+      <div class="receipt-info">
+        <div class="receipt-store">${r.store}</div>
+        <div class="receipt-date">${r.date}</div>
+        <div class="receipt-total" contenteditable="true" style="outline:none;cursor:text" onblur="updateReceiptTotal('${r.id}',this.textContent)">${r.total}</div>
+      </div>
+      <button class="receipt-del" onclick="deleteReceipt('${r.id}')">×</button>
+    </div>`
+  ).join('');
+}
+function updateReceiptTotal(id, val) { const r = S.receipts.find(x => x.id === id); if(r) r.total = val.trim() || '—'; }
+function deleteReceipt(id) { S.receipts = S.receipts.filter(r => r.id !== id); renderReceipts(); }
+
+// ══ PLAN WIZARD ════════════════════════════════════════════════
+function openPlanner() { S.wizMeals = {...S.weekMeals}; S.wizPantryAnswers = {}; renderWizStep(1); openModal('plan-modal'); }
+function renderWizStep(step) {
+  document.querySelectorAll('.wiz-step').forEach(s => s.classList.remove('on'));
+  const el = document.getElementById('wiz-' + step); if(el) el.classList.add('on');
+  document.getElementById('wiz-prog').innerHTML = Array.from({length:5}, (_,i) =>
+    `<div class="wiz-dot ${i+1 < step ? 'done' : i+1 === step ? 'active' : ''}"></div>`
+  ).join('');
+  if (step === 1) renderWiz1();
+  if (step === 2) renderWiz2();
+  if (step === 3) renderWiz3();
+  if (step === 4) renderWiz4();
+  if (step === 5) renderWiz5();
+}
+function renderWiz1() {
+  document.getElementById('abbey-days').innerHTML = DAYS.map(d =>
+    `<div class="day-toggle ${S.wizAbbeyDays[d.key] ? 'sel' : ''}" onclick="toggleAbbeyDay('${d.key}')">
+      <div style="font-weight:800;font-size:13px;min-width:34px">${d.label}</div>
+      <div style="flex:1"><div style="font-weight:600;font-size:13px">${d.full}</div>
+      <div style="font-size:11px;color:var(--text-soft)">${S.wizAbbeyDays[d.key] ? 'Working' : 'Day off'}</div></div>
+      <div class="dt-check">${S.wizAbbeyDays[d.key] ? ck() : ''}</div>
+    </div>`
+  ).join('');
+}
+function toggleAbbeyDay(key) { S.wizAbbeyDays[key] = !S.wizAbbeyDays[key]; renderWiz1(); }
+function renderWiz2() {
+  const wd = DAYS.filter(d => S.wizAbbeyDays[d.key]);
+  document.getElementById('lily-watcher-days').innerHTML = !wd.length
+    ? '<div style="color:var(--text-soft);font-size:13px;padding:10px">No work days selected — go back.</div>'
+    : wd.map(d =>
+        `<div class="card" style="margin-bottom:8px"><div class="card-body">
+          <div style="font-weight:700;margin-bottom:9px">${d.full}</div>
+          <div style="display:flex;gap:7px">
+            ${['Grandparents','Daycare','Other'].map(w =>
+              `<button style="flex:1;padding:7px;border-radius:9px;border:2px solid ${S.wizWatcher[d.key]===w?'var(--forest-light)':'var(--mint)'};background:${S.wizWatcher[d.key]===w?'var(--foam)':'white'};font-family:Outfit,sans-serif;font-size:11.5px;font-weight:700;cursor:pointer;color:${S.wizWatcher[d.key]===w?'var(--forest)':'var(--text-mid)'}" onclick="setWatcher('${d.key}','${w}')">${w}</button>`
+            ).join('')}
+          </div>
+        </div></div>`
+      ).join('');
+}
+function setWatcher(day, w) { S.wizWatcher[day] = w; renderWiz2(); }
+function renderWiz3() {
+  document.getElementById('wiz-meal-slots').innerHTML = DAYS.map(d => {
+    const mid  = S.wizMeals[d.key] || S.weekMeals[d.key];
+    const meal = MEALS[mid];
+    return `<div class="meal-slot" onclick="wizSwapMeal('${d.key}')">
+      <div class="ms-day">${d.label}</div>
+      <div class="ms-info">
+        <div class="ms-name">${meal ? meal.emoji + ' ' + meal.name : 'Select meal'}</div>
+        <div class="ms-meta">${d.type==='work'?'⚡ Quick needed':'Off day'}${meal?' • '+meal.cal+' kcal':''}</div>
+      </div>
+      ${d.type !== 'pizza' ? '<div class="ms-swap">Swap</div>' : '<div style="font-size:10.5px;color:var(--tomato);font-weight:700">🍕 Fixed</div>'}
+    </div>`;
+  }).join('');
+}
+function wizSwapMeal(dk) {
+  if (S.weekMeals[dk] === 'pizza') return;
+  S.swapDay = dk; S.swapSel = null;
+  const day = DAYS.find(d => d.key === dk);
+  document.getElementById('swap-title').textContent = 'Swap ' + day.full + ' Dinner';
+  document.getElementById('swap-opts').innerHTML = Object.values(MEALS)
+    .filter(m => m.id !== (S.wizMeals[dk] || S.weekMeals[dk]))
+    .map(m => `<div class="sopt" id="so-${m.id}" onclick="selWizSwap('${m.id}','${dk}')">
+      <span style="font-size:24px">${m.emoji}</span>
+      <div><div style="font-weight:700;font-size:13.5px">${m.name}</div>
+      <div style="font-size:11px;color:var(--text-soft)">${m.cal} kcal • ${m.protein}g P • ${m.time}</div></div>
+    </div>`).join('');
+  openModal('swap-modal');
+}
+function selWizSwap(mid, dk) {
+  document.querySelectorAll('.sopt').forEach(e => e.classList.remove('sel'));
+  const el = document.getElementById('so-' + mid); if(el) el.classList.add('sel');
+  S.wizMeals[dk] = mid; closeModal('swap-modal'); renderWiz3();
+}
+function renderWiz4() {
+  document.getElementById('wiz-pantry').innerHTML = PANTRY_QS.map((q,i) => {
+    const a = S.wizPantryAnswers[q.id];
+    return `<div class="pantry-q">
+      <div style="font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--text-soft);margin-bottom:5px">${i+1} of ${PANTRY_QS.length}</div>
+      <div class="pq-text">${q.q}</div>
+      <div class="pq-btns">
+        <button class="pq-yes ${a===true?'sel':''}"  onclick="wizAnswerPantry('${q.id}',true,'${q.grocery||'null'}')">✅ Yes</button>
+        <button class="pq-no  ${a===false?'sel':''}" onclick="wizAnswerPantry('${q.id}',false,'${q.grocery||'null'}')">❌ Need it</button>
+      </div></div>`;
+  }).join('');
+}
+function wizAnswerPantry(id, has, gid) { S.wizPantryAnswers[id] = has; if(gid && gid!=='null') S.groceryChecked[gid] = has; renderWiz4(); }
+function renderWiz5() {
+  const wd = DAYS.filter(d => S.wizAbbeyDays[d.key]).map(d => d.full).join(', ') || 'None';
+  document.getElementById('wiz-summary').innerHTML =
+    `<div class="sum-row"><div style="font-size:12.5px;color:var(--text-soft)">Abbey works</div><div style="font-size:13px;font-weight:700">${wd}</div></div>` +
+    DAYS.map(d => { const m = MEALS[S.wizMeals?.[d.key] || S.weekMeals[d.key]]; return `<div class="sum-row"><div style="font-size:12.5px;color:var(--text-soft)">${d.full}</div><div style="font-size:13px;font-weight:700">${m ? m.emoji+' '+m.name : 'TBD'}</div></div>`; }).join('');
+  const total = GROCERY_SECTIONS.reduce((a,s) => a + s.items.length, 0);
+  document.getElementById('wiz-grocery-count').textContent = (total - Object.values(S.groceryChecked).filter(Boolean).length) + ' items to buy';
+}
+function wizNext(s) { renderWizStep(s); }
+function finalizePlan() {
+  if (S.wizMeals) Object.assign(S.weekMeals, S.wizMeals);
+  closeModal('plan-modal'); renderHome(); renderMeals(); renderGrocery(); goView('grocery');
+}
+
+// ══ INIT ═══════════════════════════════════════════════════════
+function init() {
+  try { renderHome(); }    catch(e) { console.error('renderHome',e); }
+  try { renderMeals(); }   catch(e) { console.error('renderMeals',e); }
+  try { renderGrocery(); } catch(e) { console.error('renderGrocery',e); }
+  try { renderPrep(); }    catch(e) { console.error('renderPrep',e); }
+  try { renderLibrary(); } catch(e) { console.error('renderLibrary',e); }
+  try { renderNutrition(); } catch(e) { console.error('renderNutrition',e); }
+  try { renderReceipts(); }  catch(e) { console.error('renderReceipts',e); }
+}
+init();
+</script>
+</body>
+</html>
